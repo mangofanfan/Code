@@ -1,0 +1,23 @@
+{
+  "name": "Code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "vitepress-plugin-group-icons": "^1.3.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.12.1",
+    "@nolebase/vitepress-plugin-git-changelog": "^2.12.1",
+    "vitepress": "^1.6.3",
+    "vitepress-plugin-lightbox": "^1.0.2"
+  },
+  "private": true
+}

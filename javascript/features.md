@@ -1,0 +1,10 @@
+# Javascript
+## 概述
+Javascript（JS）是网站开发前端三件套中的脚本语言，用于在浏览器端执行，为网页带来更多的可能性。
+
+2015年推出的ES6标准是Javascript的最新版本的标准，但是实际上ES6本身依然在持续更新，且各浏览器对标准的兼容性也有所区别。本教程将会尽可能轻松地带你入门Javascript。
+
+Javascript是逐行执行的脚本语言，这意味着一旦某一行执行错误，后面的代码有可能不会继续执行。如果需要规避由于编码问题导致的运行时错误，可以考虑下面的Typescript。
+
+Typescript是Javascript的超集，在完全兼容Javascript的基础上增加了更多的特性。[你可以在这里查看本站的Typescript教程。](/typescript/features)在你了解了Javascript之后，可以尝试学习Typescript。
+
