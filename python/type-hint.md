@@ -31,10 +31,10 @@ for string in stringList:
 另外，你也可以将变量指定为你定义的类型，例如：
 ```python
 class Cat:
-    def __init__(self, name: str, age: int)
+    def __init__(self, name: str, age: int):
         self.name = name
         self.age = age
-    def miaow()
+    def miaow(self):
         print(f"{self.name}: Miaow Miaow!!")
         
 // 假设这里有很多很多代码
