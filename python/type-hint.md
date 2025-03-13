@@ -37,7 +37,7 @@ class Cat:
     def miaow(self):
         print(f"{self.name}: Miaow Miaow!!")
         
-// 假设这里有很多很多代码
+# 假设这里有很多很多代码
 
 for cat in catList:
     cat: Cat
