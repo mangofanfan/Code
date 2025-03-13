@@ -81,7 +81,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/mangofanfan/Code/edit/main/:path', // 改成自己的仓库
+      pattern: 'https://github.com/mangofanfan/Code/edit/master/:path', // 改成自己的仓库
       text: '在GitHub编辑本页'
     },
   },
