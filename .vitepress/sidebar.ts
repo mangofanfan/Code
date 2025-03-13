@@ -59,7 +59,8 @@ export const python = [
     {
         text: "面向对象",
         items: [
-            {text: "类型与实例", link: '/python/class-and-instantiation'}
+            {text: "类型与实例", link: '/python/class-and-instantiation'},
+            {text: "类型方法", link: '/python/class-method'}
         ]
     } as pageSidebarItem
 ]
