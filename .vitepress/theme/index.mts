@@ -11,14 +11,14 @@ import {
     NolebaseEnhancedReadabilitiesScreenMenu,
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
-/*
+
 // 页面历史
 import {
     NolebaseGitChangelogPlugin
 } from '@nolebase/vitepress-plugin-git-changelog/client'
 
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
-*/
+
 // 自定义组件
 import WhatsClass from "./components/WhatsClass.vue"
 
@@ -33,8 +33,8 @@ export const Theme: ThemeConfig = {
         })
     },
     enhanceApp({ app }) {
-        //app.use(NolebaseGitChangelogPlugin)
-        app.component('WhatsClass', WhatsClass)
+        app.use(NolebaseGitChangelogPlugin);
+        app.component('WhatsClass', WhatsClass);
     },
 };
 

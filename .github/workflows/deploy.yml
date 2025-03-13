@@ -6,7 +6,7 @@ on:
   # 在针对 `main` 分支的推送上运行。如果你
   # 使用 `master` 分支作为默认分支，请将其更改为 `master`
   push:
-    branches: [main]
+    branches: [master]
 
   # 允许你从 Actions 选项卡手动运行此工作流程
   workflow_dispatch:
@@ -66,7 +66,7 @@ jobs:
         env:
           SECRET_ID: ${{ secrets.SECRET_ID }}
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
-          BUCKET: docs-fantools-1309266774
+          BUCKET: code-1309266774
           REGION: ap-nanjing
         run: coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
 

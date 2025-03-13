@@ -5,13 +5,13 @@ import lightbox from "vitepress-plugin-lightbox"
 
 // 代码组图标
 import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
-/*
+
 // 页面历史
 import {
   GitChangelog,
   GitChangelogMarkdownSection,
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
-*/
+
 // 导入导航
 import {common, c, cpp, python, css, scss, javascript, typescript} from "./sidebar"
 
@@ -55,7 +55,7 @@ export default defineConfig({
     returnToTopLabel: "返回顶部",
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/mangofanfan/FanTools2' }
+      { icon: 'github', link: 'https://github.com/mangofanfan/Code' }
     ],
 /*
     search: {
@@ -81,7 +81,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/mangofanfan/FanTools-Doc/edit/main/:path', // 改成自己的仓库
+      pattern: 'https://github.com/mangofanfan/Code/edit/main/:path', // 改成自己的仓库
       text: '在GitHub编辑本页'
     },
   },
@@ -122,10 +122,10 @@ export default defineConfig({
               css: 'logos:css-3', //css图标
             },
           }
-      ),/*
+      ),
       GitChangelog({
           // 填写在此处填写您的仓库链接
-          repoURL: () => 'https://github.com/mangofanfan/FanTools-Doc',
+          repoURL: () => 'https://github.com/mangofanfan/Code',
           mapAuthors: [
             {
               name: "MangoFanFan_",
@@ -135,7 +135,7 @@ export default defineConfig({
             }
           ]
       }),
-      GitChangelogMarkdownSection(),*/
+      GitChangelogMarkdownSection(),
     ],
   },
 })
