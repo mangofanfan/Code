@@ -26,7 +26,7 @@ for string in stringList:
 
 但是IDE看不出来，怎么办呢？欸！加上类型注释`string: str`就好嘞。
 
-在实际运行中，如果阴差阳错，`stringList`中混入了一个整形，Python会在`pring(string.split(","))`报错，而非`string: str`，这说明类型注释终归是注释，也证明了Python是一门若类型语言。
+在实际运行中，如果阴差阳错，`stringList`中混入了一个整形，Python会在`pring(string.split(","))`报错，而非`string: str`，这说明类型注释终归是注释，也证明了Python是一门弱类型语言。
 
 另外，你也可以将变量指定为你定义的类型，例如：
 ```python
