@@ -14,7 +14,7 @@ C语言在Python程序员群体中同样占据重要地位，因为Python正是C
 ```c
 #include <stdio.h>
  
-int main()
+int main(void)
 {
     /* 我的第一个 C 程序 */
     printf("Hello, World! \n");
