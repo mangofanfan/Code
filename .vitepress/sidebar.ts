@@ -60,7 +60,7 @@ export const python = [
     {
         text: "帮助",
         items: [
-            {text: "类型注释", link: '/python/type-hint'}
+            {text: "类型提示", link: '/python/type-hint'}
         ]
     } as pageSidebarItem,
     {
