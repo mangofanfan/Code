@@ -116,7 +116,11 @@ export default defineConfig({
       groupIconVitePlugin(
           {
             customIcon: {
-              python: localIconLoader(import.meta.url, '../public/svg/python-icon.svg'), //本地ts图标导入
+              python: localIconLoader(import.meta.url, '../public/svg/python-icon.svg'),
+              c: localIconLoader(import.meta.url, '../public/svg/c-icon.svg'),
+              h: localIconLoader(import.meta.url, '../public/svg/c-icon.svg'),
+              cpp: localIconLoader(import.meta.url, '../public/svg/c++-icon.svg'),
+              cs: localIconLoader(import.meta.url, '../public/svg/c#-icon.svg'),
               js: 'logos:javascript', //js图标
               md: 'logos:markdown', //markdown图标
               css: 'logos:css-3', //css图标

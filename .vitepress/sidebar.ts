@@ -32,6 +32,12 @@ export const c = [
             {text: "语言特性", link: '/c/features'},
             {text: "执行", link: '/c/run'}
         ]
+    } as pageSidebarItem,
+    {
+        text: "多文件工程",
+        items: [
+            {text: "模块化与头文件", link: '/c/head-file'},
+        ]
     } as pageSidebarItem
 ]
 
