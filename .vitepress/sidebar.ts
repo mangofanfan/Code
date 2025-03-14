@@ -29,7 +29,8 @@ export const c = [
     {
         text: "概览",
         items: [
-            {text: "语言特性", link: '/c/features'}
+            {text: "语言特性", link: '/c/features'},
+            {text: "执行", link: '/c/run'}
         ]
     } as pageSidebarItem
 ]
