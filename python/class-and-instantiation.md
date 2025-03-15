@@ -1,4 +1,4 @@
-# 类型与实例化
+# 类型与实例
 <WhatsClass></WhatsClass>
 
 Python使用`class`关键字来定义类型。类型是Python中很常见的东西，这也符合Python万物皆对象的设计理念。
