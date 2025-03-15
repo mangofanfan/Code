@@ -55,6 +55,18 @@ export const cpp = [
         items: [
             {text: "语言特性", link: '/cpp/features'}
         ]
+    } as pageSidebarItem,
+    {
+        text: "面向对象",
+        items: [
+            {text: "类型与实例", link: '/cpp/class-and-instantiation'}
+        ]
+    } as pageSidebarItem,
+    {
+        text: "多文件工程",
+        items: [
+            {text: "与C一同使用", link: '/cpp/work-with-c'}
+        ]
     } as pageSidebarItem
 ]
 

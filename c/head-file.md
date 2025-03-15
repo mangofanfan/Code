@@ -169,5 +169,9 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(Calculator main.c
         calculator.c
-        calculator.h)
+        calculator.h
+)
 ```
+确保你的所有C语言源文件（包括`c`和`h`文件）都包含在`add_executable(...)`中，且你的所有源文件中有且仅有一个`main`函数即可。关于CMake的专门教程会在日后提供。
+
+如果你需要编译一个C++与C的混合项目，请参见C++教程中的[与C一同使用章节](/cpp/work-with-c)。
