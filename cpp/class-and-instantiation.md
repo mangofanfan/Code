@@ -149,7 +149,7 @@ int main() {
 explicit Cat() {
     this->name = "Tom";
     this->age = 18;
-};
+}
 explicit Cat(string name, const int age = 18) {
     this->name = move(name);
     this->age = age;

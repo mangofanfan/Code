@@ -57,6 +57,12 @@ export const cpp = [
         ]
     } as pageSidebarItem,
     {
+        text: "基本",
+        items: [
+            {text: "输入输出", link: '/cpp/cin-cout'}
+        ]
+    } as pageSidebarItem,
+    {
         text: "面向对象",
         items: [
             {text: "类型与实例", link: '/cpp/class-and-instantiation'}
