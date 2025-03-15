@@ -34,6 +34,14 @@ export const c = [
         ]
     } as pageSidebarItem,
     {
+        text: "单文件入门",
+        items: [
+            {text: "数组", link: '/c/array'},
+            {text: "字符串", link: '/c/string'},
+            {text: "函数", link: '/c/function'},
+        ]
+    } as pageSidebarItem,
+    {
         text: "多文件工程",
         items: [
             {text: "模块化与头文件", link: '/c/head-file'},
