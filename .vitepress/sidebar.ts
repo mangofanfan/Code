@@ -86,6 +86,8 @@ export const python = [
     {
         text: "帮助",
         items: [
+            {text: "基本类型", link: '/python/basic-type'},
+            {text: "函数", link: '/python/function'},
             {text: "类型提示", link: '/python/type-hint'}
         ]
     } as pageSidebarItem,
