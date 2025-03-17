@@ -14,6 +14,7 @@ export const common = [
     {
         text: "编程概念",
         items: [
+            {text: "IDE", link: '/common/ide'},
             {text: "面向对象", link: '/common/object-oriented'}
         ]
     } as pageSidebarItem,
