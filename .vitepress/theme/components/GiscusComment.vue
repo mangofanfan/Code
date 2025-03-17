@@ -3,15 +3,18 @@
     <Giscus
         id="comments"
         repo="mangofanfan/Code"
+        host="code.mangofanfan.cn"
         repoid="R_kgDOOH1lvA"
         category="General"
-        categoryid="DIC_kwDOOH1lvM4CoH--"
-        mapping="pathname"
-        term="欸嘿😊QAQ"
+        categoryid="DIC_kwDOOH1lvM4CoH-9"
+        mapping=""
+        strict=1
         reactionsenabled="1"
         emitmetadata="0"
         inputposition="top"
+        crossorigin="anonymous"
         loading="lazy"
+        lang="zh-CN"
         :theme="isDark ? 'dark' : 'light'"
         :key="route.path"
     ></Giscus>
