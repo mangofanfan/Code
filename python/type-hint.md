@@ -18,6 +18,7 @@ Python本身的弱类型特点让本页教程中的类型提示显得似乎有�
 
 如果你对这不是很了解，可以暂时忽略，专注于本页的内容即可。
 :::
+类型提示自然是类型的提示，需要你首先了解Python中的那些类型。[如果你不记得了，回去看基本类型哦。](/python/basic-type)
 
 ## 基本注释
 ```python
@@ -68,6 +69,8 @@ def add(x: int, y: int) -> int:
 
 上方的`add`函数接收`x`、`y`两个参数，返回一个变量，三个都是整形类型。这样的定义可以帮助IDE为你提供更好的函数签名辅助。
 
+如果函数不返回值，则可以写为`-> None:`。
+
 :::tip 函数签名
 函数签名似乎是来自C++的概念，是指函数的名称及其参数类型的组合，用于区分不同的函数。函数签名不包括返回类型，也不包括参数的名字。
 :::
@@ -75,6 +78,49 @@ def add(x: int, y: int) -> int:
 同样，如果你使用`print(add("Mango", "FanFan"))`，会得到`MangoFanFan`而不是一个`TypeError`，这说明函数签名也不会在运行时进行检查。
 
 同样，可以使用你定义的其他类来作为注释。
+
+### 传入函数
+你完全可以将函数当作对象处理，自然也可以将函数作为参数传入另一函数。你可以使用`callable`提示表示传入的对象是一个函数，或者说可调用，毕竟函数就是典型的可调用对象。
+```python
+def add(x: int, y: int) -> int:
+    return x+y
+
+def sub(x: int, y: int) -> int:
+    return x-y
+
+def calc(x: int, y: int, action: callable) -> int:
+    return action(x, y)
+
+print(calc(10, 20, add))
+print(calc(10, 20, sub))
+```
+```python
+30
+-10
+```
+你也可以更详细地标注传入的可调用对象（即函数）的传入类型和返回类型，此时需要将`callable`换成`typing.Callable`，以下是示例：
+```python
+from typing import Callable
+
+
+def add(x: int, y: int) -> int:
+    return x+y
+
+def sub(x: int, y: int) -> int:
+    return x-y
+
+def calc(x: int, y: int, action: Callable[[int, int], int]) -> int:
+    return action(x, y)
+
+print(calc(10, 20, add))
+print(calc(10, 20, sub))
+```
+`Callable[[], ]`中，内层的中括号中是传入值的类型，有多少写多少；外层中括号的第二个参数是返回值的类型。以上代码的打印结果相同。
+:::info 你知道吗？
+将函数作为参数传入函数，实际上就是Python中的**装饰器**的底层原理。
+
+装饰器将在后面介绍哦。
+:::
 
 ## 复杂提示
 ### 多种类型
