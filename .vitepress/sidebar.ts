@@ -60,7 +60,8 @@ export const cpp = [
     {
         text: "基本",
         items: [
-            {text: "输入输出", link: '/cpp/cin-cout'}
+            {text: "输入输出", link: '/cpp/cin-cout'},
+            {text: "函数", link: '/cpp/function'},
         ]
     } as pageSidebarItem,
     {
@@ -75,6 +76,15 @@ export const cpp = [
             {text: "与C一同使用", link: '/cpp/work-with-c'}
         ]
     } as pageSidebarItem
+]
+
+export const java = [
+    {
+        text: "概览",
+        items: [
+            {text: "语言特性", link: '/java/features'},
+        ]
+    } as pageSidebarItem,
 ]
 
 export const python = [

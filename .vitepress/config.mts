@@ -13,7 +13,7 @@ import {
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 // 导入导航
-import {common, c, cpp, python, css, scss, javascript, typescript} from "./sidebar"
+import {common, c, cpp, java, python, css, scss, javascript, typescript} from "./sidebar"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -27,19 +27,25 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'C', link: '/c/features' },
-      { text: 'C++', link: '/cpp/features' },
-      { text: 'Python', link: '/python/features' },
-      { text: 'CSS', link: '/css/features' },
-      { text: 'SCSS', link: '/scss/features' },
-      { text: 'JS', link: '/javascript/features' },
-      { text: 'TS', link: '/typescript/features' },
+      { text: '食用', link: '/common/start' },
+      { text: '语言', items:[
+          { text: 'C', link: '/c/features' },
+          { text: 'C++', link: '/cpp/features' },
+          { text: 'Java', link: '/java/features' },
+          { text: 'Python', link: '/python/features' },
+          { text: 'CSS', link: '/css/features' },
+          { text: 'SCSS', link: '/scss/features' },
+          { text: 'JavaScript', link: '/javascript/features' },
+          { text: 'TypeScript', link: '/typescript/features' },
+        ]
+      },
     ],
 
     sidebar: {
       "/": common,
       "/c/": c,
       "/cpp/": cpp,
+      "/java/": java,
       "/python/": python,
       "/css/": css,
       "/scss/": scss,
