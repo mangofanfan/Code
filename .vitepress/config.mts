@@ -57,15 +57,15 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/mangofanfan/Code' }
     ],
-/*
+
     search: {
       provider: 'algolia',
       options: {
-        appId: 'KN3ULRBK25',
-        apiKey: '5e5f1a3e75dfaaeb3ab126aae0990f12',
-        indexName: 'fantools-mangofanfan'
+        appId: '64M9HSA94L',
+        apiKey: '16e484639f0be9ad4f7f5e95dee714bb',
+        indexName: 'crawler_code-space'
       }
-    },*/
+    },
 
     footer: {
       message: 'License: GPL-v3. 文本协议 CC-BY',
