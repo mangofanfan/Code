@@ -92,6 +92,7 @@ export const python = [
         text: "概览",
         items: [
             {text: "语言特性", link: '/python/features'},
+            {text: "碎碎念", link: '/python/something'},
         ]
     } as pageSidebarItem,
     {
