@@ -13,6 +13,8 @@
 
 如果想要用Python去打比赛，然后来质问Python怎么这么慢，那我也不好说什么了。
 
+这可不是说Python程序完全不需要在意性能，程序的性能当然是越快越好，在Python层面进行优化自然也是可接受的。只是不要看见Python就提“你竟然用了Python”，或者看到Python的性能优化就说“你都用Python了”，那样会显得提的人水平不高。
+
 说多了也挺没意思的。
 
 ## GIL（Global Interpreter Lock 全局解释器锁）
