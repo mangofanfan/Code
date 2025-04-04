@@ -108,3 +108,64 @@ cal_sum(1, 2, 3, 4, 5, x=1, y=2)
 `*args`会将接收到的任意数量的参数打包为元组`arg`，而`**kwargs`会将接收到的任意数量的关键字参数打包为字典`kwargs`。`**kwargs`也并非必须提供，其命名也是约定俗成的写法。
 
 在一般情况下不建议滥用`*args`和`**kwargs`，而是建议将函数的签名填写完整清晰。
+
+## 函数重载
+**Python不支持传统意义上的函数重载。**
+
+在C++、Java等语言中，重复定义相同名称、不同签名的函数即所谓的**函数重载**。调用函数时，将由语言来决定使用哪种函数实现。但Python不同，你只能给出一种函数的实现；如需重载，只能为这个函数提供不同的签名。
+
+```python {4-9}
+from typing import overload
+
+
+@overload
+def cal_add(a: int, b: int) -> int: ...
+@overload
+def cal_add(a: float, b: float) -> float: ...
+@overload
+def cal_add(a: str, b: str) -> str: ...
+
+def cal_add(a, b):
+    result = a + b
+    print(f"{a} + {b} = {result}")
+    return result
+
+
+cal_add(1, 2)
+cal_add(1.5, 2.5)
+cal_add("1", "2")
+```
+你瞧，与其称之为函数重载，不如将其视作一种新型的**类型提示**。`overload`是装饰器，代码4-9行重复给出了三次`cal_add`函数的签名和返回值，但不给出具体的函数实现，而是在给出所有的重载后再仅提供一种实现。
+
+在上面的例子中，由于Python中的`+`运算符能够处理整形、浮点型和字符串之间的加法运算，因此我们没有写出重载最常见的模样。事实上，Python中常见的重载更类似下面的模样：
+```python
+from typing import Any, overload
+
+@overload
+def create_std() -> dict[str, Any]: ...
+@overload
+def create_std(obj: dict[str, Any]) -> dict[str, Any]: ...
+@overload
+def create_std(name: str, age: int) -> dict[str, Any]: ...
+
+
+def create_std(obj: dict[str, Any] = None, name: str = None, age: int = None):
+    if obj is not None:
+        new_std = obj.copy()
+        return new_std
+    elif name is not None and age is not None:
+        return {
+            "name": name,
+            "age": age
+        }
+    else:
+        return {
+            "name": "default_name",
+            "age": 18
+        }
+```
+注意到，`overload`确实只有类型提示的作用，而我们需要在唯一的`create_std`的实现中完成所有重载的条件分支与实现。上面只是给出示例以方便理解，实际工程中的重载方式与条件判断可能还有很大区别。
+
+:::warning 装饰器是什么？
+位于函数签名的上一行、以`@`开头的东西就是**装饰器**，将在后面的教程中介绍。
+:::
