@@ -96,9 +96,10 @@ export const python = [
         ]
     } as pageSidebarItem,
     {
-        text: "帮助",
+        text: "入门",
         items: [
             {text: "基本类型", link: '/python/basic-type'},
+            {text: "循环", link: '/python/loop'},
             {text: "函数", link: '/python/function'},
             {text: "类型提示", link: '/python/type-hint'}
         ]
