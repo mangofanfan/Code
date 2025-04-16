@@ -14,6 +14,8 @@ GitHub确实存在访问不稳定的情况，可能需要你想些办法……
 
 芒果帆帆在此仓库的工作中使用的IDE是JetBrains的WebStorm。使用WebStorm时会自动配置所需的环境和依赖，然后打开仓库根目录下的`package.json`，使用`docs:dev`即可在你的开发环境本地运行测试服务器。如果你使用的IDE没有为你提供这类的快捷选项，则可以在环境与依赖安装完毕后使用`vitepress dev`命令启动开发测试服务器。
 
+以及，芒果帆帆正在将Code Space的工作流程转移到WSL上，编辑器也切换为Visual Studio Code。VS Code同样会自动配置环境，并提供快速启动项目的能力，你还可以通过一些拓展来在VS Code中直接打开VitePress网站预览，在此不再赘述。
+
 如果你选择了更专业的工作流程，请避免修改VitePress的配置目录`.vitepress`下的文件，或者至少应该先和我取得共识。另外，如果只是修改一些错别字的话（毕竟我经常打错字嘛），直接在线编辑即可。
 
 如有任何必要，可以发邮件给我：`mangofanfanw@icloud.com`、`mangofanfanw@hotmail.com`。
