@@ -100,6 +100,7 @@ export const python = [
         items: [
             {text: "基本类型", link: '/python/basic-type'},
             {text: "循环", link: '/python/loop'},
+            {text: "条件与异常", link: "/python/if-try"},
             {text: "函数", link: '/python/function'},
             {text: "类型提示", link: '/python/type-hint'}
         ]
