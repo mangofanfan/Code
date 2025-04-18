@@ -1,9 +1,11 @@
 # 条件与异常
+
 Python中使用`if`、`elif`和`else`来表示条件判断，使用`try`、`except`、`else`和`finally`表示异常捕获和处理。
 
 他们在语法上有诸多相似，加上异常也是Python的重要内容，因此放在一起介绍。
 
 ## 条件判断
+
 ```python
 num = int(input("请输入数字："))
 
@@ -12,11 +14,13 @@ if num > 0:
 else:
     print("输入的数字是负数：", num)
 ```
+
 第一行中，我们使用`input`从控制台接收用户传入的内容，然后使用`int(input())`将传入内容转化成整形。`input`调用中传入的`"请输入数字："`将作为提示出现在控制台中，引导用户输入内容。
 
-然后，在`print`中，我们传入的东西会按顺序在一行中打印，以空格` `分隔。
+然后，在`print`中，我们传入的东西会按顺序在一行中打印，以空格``分隔。
 
 于是我们运行以上内容，并适当传入一些不同的数字，会得到：
+
 ```bash
 mangofanfan@LAPTOP-MREQPRK3:~/HelloWorld$ /bin/python3 /home/mangofanfan/HelloWorld/01_if.py
 请输入数字：6
@@ -31,9 +35,11 @@ mangofanfan@LAPTOP-MREQPRK3:~/HelloWorld$ /bin/python3 /home/mangofanfan/HelloWo
 请输入数字：-9
 输入的数字是负数： -9
 ```
+
 这就是`if`和`else`组成的条件判断了。
 
 聪明的你一定发现了，0怎么可以是负数呢？！我们需要增加一个条件分支，这就是`elif`出场的时候了。
+
 ```python
 num = int(input("请输入数字："))
 
@@ -44,14 +50,17 @@ elif num == 0:
 else:
     print("输入的数字是负数：", num)
 ```
+
 ```bash
 mangofanfan@LAPTOP-MREQPRK3:~/HelloWorld$ /bin/python3 /home/mangofanfan/HelloWorld/01_if.py
 请输入数字：0
 输入的数字是0哦！
 ```
+
 Python中，一个条件判断逻辑总是自`if`分支开始，可以选择接没有、一个或多个`elif`分支，可以选择没有或一个`else`分支。每一个条件判断逻辑最多执行一条分支，然后就会跳过此逻辑。
 
 例如，参考以下代码：
+
 ```python
 num = int(input("请输入数字："))
 
@@ -62,6 +71,7 @@ elif num >= 0:
 else:
     print("输入的数字是负数：", num)
 ```
+
 ```bash
 mangofanfan@LAPTOP-MREQPRK3:~/HelloWorld$ /bin/python3 /home/mangofanfan/HelloWorld/01_if.py
 请输入数字：605
@@ -70,9 +80,11 @@ mangofanfan@LAPTOP-MREQPRK3:~/HelloWorld$ /bin/python3 /home/mangofanfan/HelloWo
 请输入数字：2
 输入的数字是自然数： 2
 ```
+
 第一个输入`605`同时满足条件判断逻辑的前两个分支，但仅第一个分支即`if`分支执行了。
 
 再参考以下代码：
+
 ```python
 num = int(input("请输入数字："))
 
@@ -81,6 +93,7 @@ if num > 100:
 
 print(f"你刚刚输入了{num}，是嘛！")
 ```
+
 ```bash
 mangofanfan@LAPTOP-MREQPRK3:~/HelloWorld$ /bin/python3 /home/mangofanfan/HelloWorld/01_if.py
 请输入数字：4
@@ -90,12 +103,15 @@ mangofanfan@LAPTOP-MREQPRK3:~/HelloWorld$ /bin/python3 /home/mangofanfan/HelloWo
 输入的数字太大啦！
 你刚刚输入了600，是嘛！
 ```
+
 条件判断逻辑可以没有`else`分支，此时如果不满足前面所有分支（包括一个`if`，若有`elif`则也包括若干`elif`）的判断，则不执行任何条件分支。
 
 [在前一节循环中的while循环部分](/python/loop)，我们介绍了一些判断条件，这些条件同样可用在`if`和`elif`之后，而本节中用到的如`num > 100`等条件也可以用在`while`之后。本质上，`num > 100`得到的结果无非`True`或`False`，是同样的原理啦。
 
 ## 异常处理
+
 在刚才的代码运行时，如果我们输入的东西不是数字，会发生什么呢？
+
 ```bash
 mangofanfan@LAPTOP-MREQPRK3:~/HelloWorld$ /bin/python3 /home/mangofanfan/HelloWorld/01_if.py
 请输入数字：什么数字？
@@ -104,6 +120,7 @@ Traceback (most recent call last):
     num = int(input("请输入数字："))
 ValueError: invalid literal for int() with base 10: '什么数字？'
 ```
+
 我们得到了**报错**。在未来的学习、工作、生活、开发中，程序报错是家常便饭，那么在遇到报错的时候我们应该干什么呢？
 
 **读报错信息！**
@@ -137,7 +154,9 @@ Python中内建了多种异常类型，例如这里的`ValueError`。芒果帮�
 如果是编码过程中欠考虑、代码不够健壮而导致的错误，我们自然希望让这些错误尽量都被报出来，从而有助于尽快修复。而如果是上面那样，由于用户操作不当而导致的错误，则没有必要给用户展示吓人的报错和调用栈了。
 
 ### try except
+
 在Python中，我们使用`try`、`except`语句来捕获和处理异常。
+
 ```python
 try:
     num = int(input("请输入数字："))
@@ -150,14 +169,17 @@ try:
 except ValueError:
     print("传入的东西不是数字！")
 ```
+
 ```bash
 mangofanfan@LAPTOP-MREQPRK3:~/HelloWorld$ /bin/python3 /home/mangofanfan/HelloWorld/01_if.py
 请输入数字：什么数字？
 传入的东西不是数字！
 ```
+
 `try`往往需要和`except`配合使用，和`if`等一样以缩进表示代码块。在`try`中的代码块运行时如果出现异常，则会尝试匹配`except`后的异常类型，若类型一致则执行对应的`except`分支。
 
 一个`try`可以配合多个`except`分支。如果没有任何`except`分支符合出现的异常，则异常仍然会被抛出。如果需要捕获任何异常，则可以使用不加异常类型的`except`。
+
 ```python
 try:
     num = int(input("请输入数字："))
@@ -175,6 +197,7 @@ except:
 ```
 
 ### else finally
+
 ```python
 try:
     num = int(input("请输入数字："))
@@ -194,7 +217,9 @@ else:
 finally:
     print("运行结束！")
 ```
+
 `else`是可选的分支，若`try`中的代码块没有抛出错误，则在`try`结束之后会运行`else`分支。`finally`是可选的分支，无论是否发生异常，都将在最后执行。
+
 ```bash
 mangofanfan@LAPTOP-MREQPRK3:~/HelloWorld$ /bin/python3 /home/mangofanfan/HelloWorld/01_if.py
 请输入数字：66
@@ -205,4 +230,5 @@ mangofanfan@LAPTOP-MREQPRK3:~/HelloWorld$ /bin/python3 /home/mangofanfan/HelloWo
 传入的东西不是数字！
 运行结束！
 ```
+
 在每个异常处理逻辑中，`except`和`finally`至少要有一个，`else`必须配合`except`一起使用。
