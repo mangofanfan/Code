@@ -1,8 +1,11 @@
 # 贡献
+
 ## 贡献 Code Space
+
 Code Space本质上是一个静态的在线文档。文档使用Markdown语法编写并在构建时生成为静态站点，因此你可以通过编写Markdown的方式来贡献Code Space。
 
 ### 在线编辑
+
 你可以在每个页面的底部找到「在GutHub编辑本页」的链接，点击即可前往编辑。
 
 :::info 打不开？
@@ -10,6 +13,7 @@ GitHub确实存在访问不稳定的情况，可能需要你想些办法……
 :::
 
 ### 更专业的工作流程
+
 [这里是Code Space的GitHub仓库首页。](https://github.com/mangofanfan/Code)你可以将仓库克隆到你的开发环境中，然后使用您的本地IDE（或Markdown编辑器）操作本项目。
 
 芒果帆帆在此仓库的工作中使用的IDE是JetBrains的WebStorm。使用WebStorm时会自动配置所需的环境和依赖，然后打开仓库根目录下的`package.json`，使用`docs:dev`即可在你的开发环境本地运行测试服务器。如果你使用的IDE没有为你提供这类的快捷选项，则可以在环境与依赖安装完毕后使用`vitepress dev`命令启动开发测试服务器。
@@ -21,6 +25,7 @@ GitHub确实存在访问不稳定的情况，可能需要你想些办法……
 如有任何必要，可以发邮件给我：`mangofanfanw@icloud.com`、`mangofanfanw@hotmail.com`。
 
 ## VitePress Markdown帮助（英文）
+
 :::warning 不适用于零Markdown基础的开发者
 若你此前完全没有接触过名为Markdown的标记语言，则需要先寻找一些Markdown基础教程……
 
@@ -32,7 +37,7 @@ This page demonstrates some of the built-in markdown extensions provided by Vite
 
 VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
 
-**Input**
+输入：
 
 ````md
 ```js{4}
@@ -46,7 +51,7 @@ export default {
 ```
 ````
 
-**Output**
+输出：
 
 ```js{4}
 export default {
@@ -60,7 +65,7 @@ export default {
 
 ### Custom Containers
 
-**Input**
+输入：
 
 ```md
 ::: info
@@ -84,7 +89,7 @@ This is a details block.
 :::
 ```
 
-**Output**
+输出：
 
 ::: info
 This is an info box.
