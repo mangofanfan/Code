@@ -24,6 +24,12 @@ export const common = [
             {text: "编码建议", link: '/common/advice'}
         ]
     } as pageSidebarItem,
+    {
+        text: "其他帮助",
+        items: [
+            {text: "WSL", link: '/common/wsl'},
+        ]
+    } as pageSidebarItem,
 ]
 
 export const c = [
