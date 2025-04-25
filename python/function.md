@@ -80,7 +80,66 @@ def function3():
     return None
 ```
 
-函数可以返回任意类型的对象，包括前面介绍的基本类型和你的自定义类型。
+函数可以返回任意类型的对象，包括前面介绍的基本类型和你的自定义类型。你可以在调用函数时接收函数的返回值（如有），例如：
+
+```python {10-12}
+def cal_add(a, b):
+    """
+    Function to add two numbers.
+    :param a: First number
+    :param b: Second number
+    :return: Sum of a and b
+    """
+    return a + b
+
+a = 10
+b = 20
+c = cal_add(a, b)
+print(f"{a} + {b} = {c}")
+```
+
+你也完全可以不使用中间变量`c`接收函数的返回值，直接使用`print(f"{a} + {b} = {cal_add(a, b)}")`，也是完全合法的。
+
+:::info docstring
+上面的函数中，我们使用`"""..."""`的方式写了一种很新的注释。这里的注释对程序的运行没有任何影响，单纯是为辅助编码而存在的。
+
+这种使用三重双引号包裹起来的长注释称为**docstring**，即**文档**。Python中任何封装的代码都可以拥有docstring，例如`<module>.py`文件、`cal_add()`函数与`Cat`类型，都可以通过在其中的头部（函数和类则在内部首行）提供docstring来描述其行为。
+
+在Python的层面上，你可以获取封装好的对象的docstring：
+
+```python
+def cal_add(a, b):
+    """
+    Function to add two numbers.
+    :param a: First number
+    :param b: Second number
+    :return: Sum of a and b
+    """
+    return a + b
+
+a = 10
+b = 20
+c = cal_add(a, b)
+print(f"{a} + {b} = {c}")
+
+print(cal_add.__doc__)
+```
+
+输出如下。
+
+```bash
+10 + 20 = 30
+
+    Function to add two numbers.
+    :param a: First number
+    :param b: Second number
+    :return: Sum of a and b
+
+```
+
+docstring的本质是特殊的注释，因此不会影响程序的运行。
+
+:::
 
 ## 可变参数
 
