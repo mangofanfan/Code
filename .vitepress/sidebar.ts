@@ -108,7 +108,8 @@ export const python = [
             {text: "循环", link: '/python/loop'},
             {text: "条件与异常", link: "/python/if-try"},
             {text: "函数", link: '/python/function'},
-            {text: "类型提示", link: '/python/type-hint'}
+            {text: "类型提示", link: '/python/type-hint'},
+            {text: "模块和包", link: '/python/module-and-package'},
         ]
     } as pageSidebarItem,
     {
