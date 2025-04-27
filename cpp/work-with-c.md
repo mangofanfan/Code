@@ -1,13 +1,16 @@
 # 与C一同使用
+
 C++和C两种语言本就一家亲。在一个项目中是可以同时存在C++和C两种语言各自的源文件的，它们可以互相调用对方实现的函数与功能。
 
 考虑到实际情况，我们仅提供从C++调用C语言的教程。
 
 ## 引入头文件
+
 参见C语言教程中的[模块化与头文件章节的程序](/c/head-file)，我们部分切换到C++，继续完成这个计算器程序。
 
 将`main.c`重命名为`main.cpp`，并对应修改`CMakeList.txt`和**头文件`calculator.h`**，使你的项目如下：
 :::code-group
+
 ```cpp [main.cpp]
 #include "calculator.h"
 
@@ -82,8 +85,10 @@ add_executable(CommandCalculator main.cpp
 )
 
 ```
+
 :::
 `extern "C"`是C++引入由C语言编写的模块时需要的语法，其有两种使用方法。
+
 ```c
 #ifndef XXXXXX_H
 #define XXXXXX_H
@@ -98,9 +103,11 @@ extern "C" {
 
 #endif
 ```
+
 `extern “C”`会让C++编译器以编译C语言的方式处理头文件，否则由于C++和C在编译期的行为不一致，会导致`main.cpp`中调用到的在C源文件中定义的函数未定义。
 
 不过如果只是用`extern "C"`的话还是会有些问题，如果我们在其他C源文件中引入此头文件，则会导致错误，因为C编译器不认识这是什么意思。因此，我们采用了这种写法：
+
 ```c
 #ifndef XXXXXX_H
 #define XXXXXX_H
@@ -117,6 +124,7 @@ extern "C" {
 
 #endif //XXXXXX_H
 ```
+
 判断`__cplusplus`可以帮助我们得知此刻是C编译器还是C++编译器在引入此头文件，如果是C++则使用`extern "C"`，否则不使用。
 
 这样，我们就实现了在C++项目中使用已有的C库。
