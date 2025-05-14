@@ -188,3 +188,5 @@ target_link_libraries(CppTest1_word PRIVATE sortlib)
 ./build/CppTest1_cmd
 ./build/CppTest1_word
 ```
+
+（或者由您的IDE自动运行）
