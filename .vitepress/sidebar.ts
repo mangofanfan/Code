@@ -28,6 +28,7 @@ export const common = [
         text: "其他帮助",
         items: [
             {text: "WSL", link: '/common/wsl'},
+            {text: "CMake", link: '/common/cmake'},
         ]
     } as pageSidebarItem,
 ]
@@ -79,6 +80,7 @@ export const cpp = [
     {
         text: "多文件工程",
         items: [
+            {text: "头文件", link: '/cpp/head-file'},
             {text: "与C一同使用", link: '/cpp/work-with-c'}
         ]
     } as pageSidebarItem

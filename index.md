@@ -19,6 +19,6 @@ hero:
 
 features:
   - title: 包括周边教程
-    details: 如何安装WSL……
+    details: 使用CMake配置中大型项目、安装WSL……
 ---
 
