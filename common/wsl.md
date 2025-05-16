@@ -158,7 +158,13 @@ wsl -s <...>
 或通过以下命令卸载指定的Linux发行版。
 
 ```powershell
-wsl -uninstall <...>
+wsl -unregister <...>
+```
+
+注意千千万万不要输错成`uninstall`，下面的命令会在你的设备上卸载WSL（但保留已经安装的发行版）。
+
+```powershell
+wsl -uninstall
 ```
 
 实在记不得的话，通过`wsl --help`可以查看`wsl`的帮助。由于我们已经介绍的原因，使用`wsl help`会得到Linux发行版的帮助，而非WSL的帮助。
