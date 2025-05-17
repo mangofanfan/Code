@@ -38,6 +38,7 @@ export const c = [
         text: "概览",
         items: [
             {text: "语言特性", link: '/c/features'},
+            {text: "安装", link: '/c/install'},
             {text: "执行", link: '/c/run'}
         ]
     } as pageSidebarItem,
@@ -61,7 +62,9 @@ export const cpp = [
     {
         text: "概览",
         items: [
-            {text: "语言特性", link: '/cpp/features'}
+            {text: "语言特性", link: '/cpp/features'},
+            {text: "安装（C）", link: '/c/install'},
+            {text: "执行（C）", link: '/c/run'}
         ]
     } as pageSidebarItem,
     {
