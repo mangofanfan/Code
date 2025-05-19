@@ -14,6 +14,8 @@
 
 在Windows下，前往CMake的官网下载安装包（文件拓展名为`.msi`），然后无脑安装即可。注意安装时需要选择`Add CMake to the system PATH for all users`，可以免去配置环境变量的痛苦。
 
+当然，你仍然需要首先安装MinGW作为Windows上的C/C++编译环境，请参见C语言中的[安装](/c/install)章节。
+
 ### Linux
 
 以WSL Ubuntu为例，运行如下命令安装：
@@ -46,6 +48,8 @@ apt install cmake
 
 # https://zhuanlan.zhihu.com/p/687454451
 ```
+
+也可以前往C语言中的[安装](/c/install)章节查看更详细的安装指南。
 
 完成安装之后，新建一个终端并运行`cmake`以检查是否安装成功。
 
