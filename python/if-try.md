@@ -108,6 +108,18 @@ mangofanfan@LAPTOP-MREQPRK3:~/HelloWorld$ /bin/python3 /home/mangofanfan/HelloWo
 
 [在前一节循环中的while循环部分](/python/loop)，我们介绍了一些判断条件，这些条件同样可用在`if`和`elif`之后，而本节中用到的如`num > 100`等条件也可以用在`while`之后。本质上，`num > 100`得到的结果无非`True`或`False`，是同样的原理啦。
 
+:::tip 等等，我曾经看见……
+`if`、`while`后面需要跟一个表示条件判断的语句，例如`num > 100`。在运行时，根据判断的结果是`True`还是`False`来决定如何运行程序。
+
+如果直接写`if num:`或者`while num:`，则会根据`num`本身来判断。在[循环的判断条件](/python/loop#判断条件)中，我们曾经提到过对象本身也可以求布尔值，在这里对于整形类型的变量`num`，如果它非零则判断为`True`，否则为`False`。
+
+可是你还看见过有人写了`if AAAAA is True:`，既然变量`AAAAA`本身一定能求布尔值，那么为什么不能直接写成`if AAAAA:`呢？
+
+在[基本类型](/python/basic-type)的最后我们提到，`is`直接判断左右变量的内存地址，而`True`、`False`和`None`都是在内存中占有空间的内部变量。**`if AAAAA is True:`的条件只会在`AAAAA`就是`True`时为真**，如果`AAAAA`是布尔值为`True`的其他类型变量则会为假。
+
+（同时也相比于`if AAAAA:`稍微快一点点）
+:::
+
 ## 异常处理
 
 在刚才的代码运行时，如果我们输入的东西不是数字，会发生什么呢？
