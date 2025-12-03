@@ -1,2 +1,8 @@
 /* index.css */
 @import 'var.css';
+@import "font.css";
+
+:root {
+    --vp-font-family-base: "LXGW";
+    --vp-font-family-mono: "LXGWMono";
+}

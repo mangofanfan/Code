@@ -2,7 +2,9 @@
 
 打开本站点的你想必已经做好成为一位程序员的准备了吧！👀
 
-**Code Space**是一个包含各种语言的简单入门与代码示例的静态站点，基于VitePress构建并部署，并且在github开源。
+**Code Space** 是一个包含各种语言的简单入门与代码示例的静态站点，基于VitePress构建并部署，并且在github开源。
+
+目前，Code Space 使用的字体是 **LXGW WenKai / 霞鹜文楷** ！（<https://github.com/lxgw/LxgwWenKai>）
 
 在顶部导航栏中选择一种语言，即可进入该语言的空间中。
 
