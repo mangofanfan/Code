@@ -8,7 +8,8 @@ export const common = [
         text: "关于本站",
         items: [
             {text: "如何食用", link: '/common/start'},
-            {text: "贡献", link: '/common/contribute'}
+            {text: "贡献", link: '/common/contribute'},
+            {text: "提问的艺术", link: '/common/how-to-question'},
         ]
     } as pageSidebarItem,
     {
@@ -94,6 +95,13 @@ export const java = [
         text: "概览",
         items: [
             {text: "语言特性", link: '/java/features'},
+            {text: "安装", link: '/java/install'},
+        ]
+    } as pageSidebarItem,
+    {
+        text: "基本",
+        items: [
+            {text: "类与方法", link: '/java/class-function'},
         ]
     } as pageSidebarItem,
 ]
