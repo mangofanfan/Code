@@ -175,6 +175,8 @@ Linux 环境未必存在图形化界面。
 `openjdk-25-jdk-headless` 是 `openjdk-25-jdk` 中移除图形化界面相关的组件之后的版本。在没有图形化界面的系统中，`headless`版本的 Java 在这种环境下更加节约资源。
 
 例如，在 WSL 中，建议安装 `headless` 版本。
+
+那么如果需要在带有图形化界面的 Linux 系统中进行 GUI 程序开发呢？就不能安装 `headless` 了~
 :::
 
 安装完成之后，再次运行 `sudo update-alternatives --config java` 检查系统中的 Java 版本：
