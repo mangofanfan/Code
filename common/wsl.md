@@ -43,16 +43,6 @@ Linux也绝非比Windows方便之流。有的Linux发行版可以安装图形化
 ~~不愧是写文档比做产品认真的公司呢~~
 :::
 
-### 安装Windows Terminal（推荐）
-
-在开始之前，首先建议安装Windows Terminal（Windows终端）。
-
-![Microsoft Store中的Windows Terminal](/common/img/Windows%20Terminal%20in%20ms-store.png)
-
-Windows Terminal为Windows提供了一个全新的多标签页终端应用程序，并且拥有对WSL的支持，可以快速打开WSL的Linux终端。
-
-![Windows Terminal](/common/img/Windows%20Terminal.png)
-
 ### 安装WSL
 
 假设您此前没有安装过WSL，打开PowerShell并输入以下命令来开始安装：
