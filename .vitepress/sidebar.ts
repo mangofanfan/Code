@@ -28,7 +28,7 @@ export const common = [
     {
         text: "其他帮助",
         items: [
-            {text: "软件", items: [
+            {text: "软件", link: '/common/software', items: [
                 {text: "WSL", link: '/common/wsl'},
                 {text: "CMake", link: '/common/cmake'},
                 {text: "vim", link: '/common/vim'},

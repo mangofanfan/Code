@@ -18,7 +18,8 @@ hero:
       link: /common/contribute
 
 features:
-  - title: 包括周边教程
-    details: 使用CMake配置中大型项目、安装WSL……
+  - title: C/C++/Python/Java/...
+    details: 很多很多很多的语言~
+  - title: 周边教程
+    details: 甚至包含如何配置 vim~
 ---
-
