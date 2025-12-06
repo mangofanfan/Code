@@ -11,27 +11,31 @@ export const common = [
             {text: "贡献", link: '/common/contribute'},
             {text: "提问的艺术", link: '/common/how-to-question'},
         ]
-    } as pageSidebarItem,
+    },
     {
         text: "编程概念",
         items: [
             {text: "IDE", link: '/common/ide'},
             {text: "面向对象", link: '/common/object-oriented'}
         ]
-    } as pageSidebarItem,
+    },
     {
         text: "编码规范",
         items: [
             {text: "编码建议", link: '/common/advice'}
         ]
-    } as pageSidebarItem,
+    },
     {
         text: "其他帮助",
         items: [
-            {text: "WSL", link: '/common/wsl'},
-            {text: "CMake", link: '/common/cmake'},
+            {text: "软件", items: [
+                {text: "WSL", link: '/common/wsl'},
+                {text: "CMake", link: '/common/cmake'},
+                {text: "vim", link: '/common/vim'},
+                {text: "杂项", link: '/common/others'},
+            ]},
         ]
-    } as pageSidebarItem,
+    },
 ]
 
 export const c = [
