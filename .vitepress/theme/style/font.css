@@ -5,45 +5,12 @@
   这些字体由于比较大所以就放在上面了，不然的话 GitHub Action 可能由于上传超时导致失败……
  */
 
+/**
+  OPPO Sans 4.0~
+ */
 @font-face {
-    font-family: 'LXGW';
-    src: url('https://file.mangofanfan.cn/s/pn6bqh') format('woff2'),
-    url("https://file.mangofanfan.cn/s/8765xb") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'LXGW';
-    src: url('https://file.mangofanfan.cn/s/42vaen') format('woff2'),
-    url("https://file.mangofanfan.cn/s/z0s07w") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'LXGW';
-    src: url('https://file.mangofanfan.cn/s/3rhg63') format('woff2'),
-    url("https://file.mangofanfan.cn/s/7np6ro") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'LXGWMono';
-    src: url('https://file.mangofanfan.cn/s/blb0gh') format('woff2'),
-    url("https://file.mangofanfan.cn/s/cmm0jm") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'LXGWMono';
-    src: url('https://file.mangofanfan.cn/s/j6lrmk') format('woff2'),
-    url("https://file.mangofanfan.cn/s/pas498") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'LXGWMono';
-    src: url('https://file.mangofanfan.cn/s/a72jbt') format('woff2'),
-    url("https://file.mangofanfan.cn/s/zg0mg2") format("truetype");
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'OPPO Sans';
+  src: url('https://file.mangofanfan.cn/s/jhfjip') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }

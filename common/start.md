@@ -4,7 +4,11 @@
 
 **Code Space** 是一个包含各种语言的简单入门与代码示例的静态站点，基于VitePress构建并部署，并且在github开源。
 
-目前，Code Space 使用的字体是 **LXGW WenKai / 霞鹜文楷** ！（<https://github.com/lxgw/LxgwWenKai>）
+你可以在下方选择你中意的字体，Code Space 将以你选择的字体展示~
+
+:::info 字体切换器 =w
+<FontsComboWidget></FontsComboWidget>
+:::
 
 在顶部导航栏中选择一种语言，即可进入该语言的空间中。
 
