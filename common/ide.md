@@ -14,6 +14,8 @@ VS Code 的核心思想是，提供一个快速、简洁、可配置、可扩展
 
 VS Code 是基于 Electron 框架、Node.js、TypeScript 和 Language Server Protocol 构建的，它的源代码完全开放，你可以在 GitHub 上查看或修改它，也可以参与它的社区和贡献，或者提出你的建议和反馈。因此，你常常能看到基于VSCode二次开发的细分领域中的专用IDE，例如腾讯推出的用来开发微信小程序的工具。VS Code 每月更新一次，它的扩展生态系统也非常丰富，你可以在 VS Code Marketplace 上找到数千个免费的扩展，来增强你的开发体验和能力。
 
+请参见：[VSCode](/common/vscode)
+
 ## Visual Studio
 
 Visual Studio（简称 VS）是一款**闭源的、付费的、平台限定的、重量级的集成开发环境**（IDE），它主要在 Windows 和 macOS 上运行，提供了一整套的开发工具和组件，包括代码编辑器、编译器、调试器、测试工具、数据库工具、图形设计器、UML 工具、代码分析工具、代码重构工具、代码管理工具、云服务工具等，以及针对不同开发目标的工作负载和模板，如 .NET、C++、Python、Java、Web、移动、桌面、游戏、机器学习、数据科学等。

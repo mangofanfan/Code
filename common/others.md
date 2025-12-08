@@ -111,6 +111,23 @@ Cmdlet 是什么？PowerShell 中设计了一系列由 `动词-名词` 构成的
 * `edit` - 使用 Edit 工具打开文件，可参见上文的 Edit；
 * `code` - 使用 VSCode 打开文件，[自然需要先安装 VSCode](/common/ide#visual-studio-code)；
 
+## Everything
+Everything 是一个闭源免费 Windows 平台的全盘搜索工具。
+
+Windows 自带搜索，但是它太令人恼火了，构建索引耗时长，搜索体验还差，因此有了 Everything。Everything 会在运行时索引 Windows 中所有磁盘（NTFS卷）的所有目录和文件，并且这几乎是在瞬间完成的，占用低且能够实时更新。
+
+Everything 还有更多功能用途等待探索，例如其完全支持 FTP，并且允许像搜索本地文件一样搜索 FTP 目录下的文件。
+
+你需要从其官网获取该软件：<https://www.voidtools.com/zh-cn/>
+
+:::info 已知问题
+回收站中的内容不能被完全索引，这是 Windows 的设计使然。
+
+Everything 需要管理员权限才能所以你 C 盘内的所有内容，这是 Windows 的设计使然。
+
+你可以将 Everything 配置为开机启动。
+:::
+
 ## Linux 上的第三方 shell Fish
 Fish ~~（鱼）~~ （Friendly Interactive Shell，交互友好型终端）是一个可在 Linux 和 macOS 上使用的第三方 shell。
 

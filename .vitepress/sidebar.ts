@@ -29,11 +29,15 @@ export const common = [
         text: "其他帮助",
         items: [
             {text: "软件", link: '/common/software', items: [
+                {text: "VSCode", link: '/common/vscode'},
+                {text: "JetBrains IDEs", link: '/common/jetbrains-ides'},
+                {text: "Git", link: '/common/git'},
                 {text: "WSL", link: '/common/wsl'},
                 {text: "CMake", link: '/common/cmake'},
                 {text: "vim", link: '/common/vim'},
                 {text: "杂项", link: '/common/others'},
             ]},
+            {text: "Mono 字体", link: '/common/mono-fonts'},
         ]
     },
 ]
