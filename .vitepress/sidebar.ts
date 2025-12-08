@@ -29,8 +29,7 @@ export const common = [
     text: "其他帮助",
     items: [
       {
-        text: "软件", items: [
-          {text: "软件", link: "/common/software"},
+        text: "软件", link: "/common/software", items: [
           {text: "VSCode", link: '/common/vscode'},
           {text: "JetBrains IDEs", link: '/common/jetbrains-ides'},
           {text: "Git", link: '/common/git'},
