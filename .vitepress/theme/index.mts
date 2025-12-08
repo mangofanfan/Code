@@ -3,9 +3,6 @@ import { h } from 'vue';
 import 'virtual:group-icons.css' //代码组样式
 import './style/index.css'
 
-import ElementPlus from 'element-plus';
-import 'element-plus/dist/index.css' // Element Plus
-
 import "@chinese-fonts/lxgwwenkaibright/dist/LXGWBright-Light/result.css"  // 霞鹜文楷 * 6
 import "@chinese-fonts/lxgwwenkaibright/dist/LXGWBright-Medium/result.css"
 import "@chinese-fonts/lxgwwenkaibright/dist/LXGWBright-Regular/result.css"
@@ -55,7 +52,6 @@ export const Theme: ThemeConfig = {
         })
     },
     enhanceApp({ app }) {
-        app.use(ElementPlus);
         app.use(NolebaseGitChangelogPlugin);
         app.component('WhatsClass', WhatsClass);
         app.component('FontsComboWidget', FontsComboWidget);

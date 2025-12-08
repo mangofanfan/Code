@@ -18,6 +18,10 @@ function switchMonoFontFamily(fontFamily: string) {
   root.style.setProperty('--vp-font-family-mono', fontFamily)
   setCookie('monoFontFamily', fontFamily)
 }
+
+// 导入 Element Plus 按钮
+import { ElButton } from 'element-plus';
+import 'element-plus/dist/index.css' // Element Plus
 </script>
 
 <template>
