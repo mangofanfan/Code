@@ -16,6 +16,7 @@ import {
 import {common, c, cpp, java, python, css, scss, javascript, typescript} from "./sidebar"
 
 // https://vitepress.dev/reference/site-config
+// noinspection JSUnusedGlobalSymbols
 export default defineConfig({
   lang: "zh-CN",
   title: "Code Space",
@@ -135,14 +136,13 @@ export default defineConfig({
           }
       ),
       GitChangelog({
-          // 填写在此处填写您的仓库链接
           repoURL: () => 'https://github.com/mangofanfan/Code',
           mapAuthors: [
             {
               name: "MangoFanFan_",
               username: "mangofanfan",
               mapByEmailAliases: "mangofanfanw@icloud.com",
-              mapByNameAliases: ["MangoFanFan", "MangoFanFan_"]
+              mapByNameAliases: ["MangoFanFan", "MangoFanFan_", "MangoFanFanw"]
             }
           ]
       }),

@@ -4,24 +4,32 @@
   ===========================================================================-->
 
 <script setup lang="ts">
+import {onMounted} from "vue";
+
+// 导入 VitePress 的所需东西
 import { VPBadge } from "vitepress/theme";
-import {setCookie} from "typescript-cookie";
 
-let root = document.documentElement
+let root: HTMLElement;
+onMounted(() => {
+  root = document.documentElement
+})
 
-function switchFontFamily(fontFamily: string) {
-  root.style.setProperty('--vp-font-family-base', fontFamily)
-  setCookie('fontFamily', fontFamily)
+async function switchFontFamily(fontFamily: string) {
+  if (root) {
+    root.style.setProperty('--vp-font-family-base', fontFamily)
+    const { setCookie } = await import("typescript-cookie");
+    setCookie('fontFamily', fontFamily)
+  }
 }
 
-function switchMonoFontFamily(fontFamily: string) {
-  root.style.setProperty('--vp-font-family-mono', fontFamily)
-  setCookie('monoFontFamily', fontFamily)
+async function switchMonoFontFamily(fontFamily: string) {
+  if (root) {
+    root.style.setProperty('--vp-font-family-mono', fontFamily)
+    const { setCookie } = await import("typescript-cookie");
+    setCookie('monoFontFamily', fontFamily)
+  }
 }
 
-// 导入 Element Plus 按钮
-import { ElButton } from 'element-plus';
-import 'element-plus/dist/index.css' // Element Plus
 </script>
 
 <template>

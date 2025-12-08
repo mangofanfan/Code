@@ -12,19 +12,6 @@ import mediumZoom from "medium-zoom";
 const { Layout } = DefaultTheme;
 const router = useRouter();
 
-// Setup medium zoom with the desired options
-const setupMediumZoom = () => {
-  mediumZoom("[data-zoomable]", {
-    background: "transparent",
-  });
-};
-
-// Apply medium zoom on load
-onMounted(setupMediumZoom);
-
-// Subscribe to route changes to re-apply medium zoom effect
-router.onAfterRouteChanged = setupMediumZoom;
-
 // 阅读增强
 import {
   NolebaseEnhancedReadabilitiesMenu,
@@ -33,9 +20,24 @@ import {
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css';
 import GiscusComment from "./components/GiscusComment.vue";
 
-import { initFontFamily } from "./font"
+// Setup medium zoom with the desired options
+const setupMediumZoom = () => {
+  mediumZoom("[data-zoomable]", {
+    background: "transparent",
+  });
+};
 
-initFontFamily();
+// Apply medium zoom on load
+onMounted(async () => {
+  // 导入 初始化字体 方法
+  const {initFontFamily} = await import("./font");
+  setupMediumZoom();
+  initFontFamily();
+});
+
+// Subscribe to route changes to re-apply medium zoom effect
+router.onAfterRouteChange = setupMediumZoom;
+
 </script>
 
 <template>
