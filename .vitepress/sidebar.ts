@@ -112,6 +112,7 @@ export const java = [
     text: "基本",
     items: [
       {text: "类与方法", link: '/java/class-function'},
+      {text: "getter setter", link: '/java/getter-setter'},
     ]
   } as pageSidebarItem,
 ]

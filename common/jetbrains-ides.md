@@ -1,7 +1,50 @@
 # JetBrains IDEs
-JetBrains 是一家专门制作各种语言的 IDE 的公司，他们为每一种或每一类语言制作专门的 IDE。你可以在它们的官网上查看所有的 IDE。
+JetBrains 是一家专门制作各种语言的 IDE 的公司，他们为每一种或每一类语言制作专门的 IDE。你可以在[它们的官网](https://www.jetbrains.com.cn/ides/)上查看所有的 IDE。
 
 过去，JetBrains 的 IDE 大部分需要收费使用，只有 Intellij IDEA 和 Pycharm 提供免费使用的 Community Edition 社区版本；现在，他们的大部分 IDE 均已经对非商业用途免费，剩余的少部分收费 IDE 也支持验证学生身份后免费获取。美中不足的是 AI 功能的免费额度过低了，得省着用……
+
+## 下载
+JetBrains 的所有 IDE 均可以使用其 JetBrains Toolbox 获取和管理。Toolbox 相当于是 JetBrains IDE 的启动器，同时兼具一定的项目管理能力。
+
+![JetBrains Toolbox](/common/img/JetBrains-Toolbox.png)
+
+正在运行的 IDE 会在图标右下角显示绿色圆点。你可以通过 Toolbox 来方便地安装、卸载、升降级 IDE，并通过 Toolbox 登录 JetBrains 账户来取代在每个 IDE 中分别登录。
+
+从 IDE 版本 2025.3 开始，所有的 JetBrains IDE 都获得了全新的外观，好康~
+
+![JetBrains New Theme](/common/img/JetBrains-IDEs-new-theme.png)
+
+### Fleet
+Fleet 是 JetBrains 推出的对标 VSCode 的 IDE 兼代码编辑器。Fleet 是 JetBrains 的一次大胆尝试，尽管目前看来尝试并不成功。
+
+### Gateway
+Gateway 是 JetBrains 的远程开发解决方案，用于连接到远程开发环境进行开发，同时启用本地 IDE 可以使用的各种工具和功能。
+
+![JetBrains Gateway](/common/img/JetBrains-Gateway.png)
+
+例如说，在 Windows 下，你需要通过 Gateway 连接到本地的 [WSL](/common/wsl)。Gateway 会在 WSL 中下载 JetBrains IDE 后端，然后启动后端，再在 Windows 中启动轻量级的 IDE 前端以供开发。VSCode 也是基于同样的原理连接到 WSL 的。
+
+同样可以连接到其他的开发环境，例如 JetBrains CodeCanvas，以及通过 ssh 连接到普通的远程主机。
+
+## 许可证
+JetBrains IDEs 的价格曾经是天文数字。~~骗你的，现在也是。~~单个 IDE 的商业许可证的年付价格从 800 ~ 1600 不等，可在其[官网的定价部分](https://www.jetbrains.com.cn/store/?section=personal&billing=yearly)查看。包含所有 IDE 的 All Products Pack 更是达到 2500 年付的天价。AI 功能包含在内，但是额度仍然有限，如果你对 AI 的需求量很大的话可能需要额外购买 AI 额度。
+
+### 永久可回退许可证
+如果你购买了年度订阅或连续 12 个月的月度订阅，你将获得所订阅的 IDE 的永久可回退许可证，这允许你在订阅结束之后继续使用订阅开始时的 IDE 版本。如果你在订阅期间升级到了更新的 IDE 版本，那么你需要回退到订阅开始时的版本，因此称之为永久回退许可证。
+
+详请参阅：<https://sales.jetbrains.com/hc/zh-cn/articles/207240845-%E4%BB%80%E4%B9%88%E6%98%AF%E6%B0%B8%E4%B9%85%E5%9B%9E%E9%80%80%E8%AE%B8%E5%8F%AF%E8%AF%81-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8>
+
+### 学生和教师的免费许可证
+请参见：<https://www.jetbrains.com.cn/academy/student-pack/>
+
+JetBrains 向学生和学术人员提供免费的全套 IDE 许可证，这需要每年验证教育邮箱或学信网报告。在毕业之后，凭此可以享受 JetBrains 所有产品的六折优惠 ~~，仍然很贵~~。
+
+该免费许可证被要求仅使用于教育用途。如果你受雇于公司，或者从事自由职业，理论上应当使用商业许可证。
+
+该免费许可证不包含完整的 AI 服务。不过，你仍然可以试用 AI。
+
+### 跨国家和地区
+JetBrains 不会根据你的 IP 地址等因素检查你的实际位置与账户地区是否一致，因此你可以切换账户地区来享受不同国家和地区的服务。账户地区每月只能切换一次，并且会影响你的 JetBrains 产品购买和插件市场购买时的可用支付方式。
 
 ## 问题与解决方案
 :::warning 注意

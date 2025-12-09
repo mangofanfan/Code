@@ -24,10 +24,12 @@ Java 源代码文件的格式后缀是`.java`，要求每个文件中都至少�
 
 ## 开发环境
 为了编写 Java 代码，十分建议且只推荐以下两款 IDE：
-* Visual Studio Code（VSCode）
-* IntelliJ IDEA（JetBrains IDEA）
+* [**Visual Studio Code（VSCode）**](/common/vscode)
+* [**IntelliJ IDEA（JetBrains IDEA）**](/common/jetbrains-ides)
 
 其中，VSCode 可能需要额外配置才能得心应手地使用，而 IDEA 则几乎可以开箱即用。请参见这里：[配置IDE](/common/ide)。
+
+在芒果的 Java 教程中，我们将使用 IntelliJ IDEA，无他，因为好用 =w
 
 ## 相关命名
 **Java SE，是指 Java 标准平台，即我们使用的 Java。** 与之对应的，还有（或曾经存在过）Java 企业平台、嵌入式平台等。
