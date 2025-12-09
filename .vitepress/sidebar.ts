@@ -142,9 +142,17 @@ export const python = [
     items: [
       {text: "类型与实例", link: '/python/class-and-instantiation'},
       {text: "类型方法", link: '/python/class-method'},
-      {text: "特殊方法", link: '/python/special-method'}
+      {text: "特殊方法", link: '/python/special-method'},
     ]
-  } as pageSidebarItem
+  } as pageSidebarItem,
+  {
+    text: "Tkinter",
+    items: [
+      {text: "特性", link: "/python/tkinter/features"},
+      {text: "添加控件", link: "/python/tkinter/add_com"},
+      {text: "事件循环", link: "/python/tkinter/eventloop"}
+    ]
+  } as pageSidebarItem,
 ]
 
 export const css = [
