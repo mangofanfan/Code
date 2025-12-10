@@ -39,7 +39,7 @@ export const common = [
           {text: "杂项", link: '/common/others'},
         ]
       },
-      {text: "Mono 字体", link: '/common/mono-fonts'},
+      {text: "字体", link: '/common/fonts'},
     ]
   },
 ]
