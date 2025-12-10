@@ -1,0 +1,1 @@
+import{getCookie as n}from"./typescript-cookie.BPHHFWFs.js";let e=document.documentElement;function i(){const o=n("fontFamily");o&&e.style.setProperty("--vp-font-family-base",o);const t=n("monoFontFamily");t&&e.style.setProperty("--vp-font-family-mono",t)}export{i as initFontFamily};
