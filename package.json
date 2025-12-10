@@ -13,7 +13,9 @@
     "@chinese-fonts/dyh": "^3.0.0",
     "@chinese-fonts/lxgwwenkaibright": "^2.0.0",
     "@chinese-fonts/lywkpmydb": "^2.0.0",
+    "@chinese-fonts/syst": "^3.0.0",
     "@giscus/vue": "^3.1.1",
+    "cn-fontsource-source-han-sans-sc-vf": "^1.0.10",
     "element-plus": "^2.12.0",
     "jetbrains-mono": "^1.0.6",
     "misans": "^4.1.0",
@@ -24,6 +26,7 @@
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.12.1",
     "@nolebase/vitepress-plugin-git-changelog": "^2.18.2",
     "@vue/runtime-core": "^3.5.25",
+    "sass-embedded": "^1.95.1",
     "typescript": "^5.5.3",
     "vitepress": "^2.0.0-alpha.15",
     "vitepress-plugin-lightbox": "^1.0.2"

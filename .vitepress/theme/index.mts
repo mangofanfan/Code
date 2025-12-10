@@ -7,6 +7,8 @@ import {inBrowser, Theme} from "vitepress";
 import 'virtual:group-icons.css' //代码组样式
 import './style/index.css'
 
+import "@chinese-fonts/syst/dist/SourceHanSerifCN/result.css"  // 思源宋体
+import "cn-fontsource-source-han-sans-sc-vf/font.css"  // 思源黑体
 import "@chinese-fonts/lxgwwenkaibright/dist/LXGWBright-Light/result.css"  // 霞鹜文楷 * 6
 import "@chinese-fonts/lxgwwenkaibright/dist/LXGWBright-Medium/result.css"
 import "@chinese-fonts/lxgwwenkaibright/dist/LXGWBright-Regular/result.css"

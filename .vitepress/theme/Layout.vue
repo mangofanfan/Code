@@ -19,6 +19,7 @@ import {
   NolebaseEnhancedReadabilitiesScreenMenu,
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css';
+// @ts-ignore
 import GiscusComment from "./components/GiscusComment.vue";
 
 // Setup medium zoom with the desired options
