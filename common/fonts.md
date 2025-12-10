@@ -11,7 +11,7 @@
 | **霞鹜文楷***     | 是✅     | 一款开源中文字体，兼有仿宋和楷体的特点，好看。同时有 Mono 版本，允许商用。                 | [GitHub](https://github.com/lxgw/LxgwWenKai)       |
 | **OPPO Sans** | 是✅     | 由 OPPO 发布的免费商用字体。                                        | [官网](https://www.coloros.com/article/A00000074/)   |
 | **MiSans**    | 是✅     | 由小米发布的免费商用字体，宣布将支持全球语言。                                  | [官网](https://hyperos.mi.com/font/zh/)              |
-| **站酷**字体      | 否❌     | 站酷字库提供的一系列字体，均可供免费商用，由于风格性较强因此适合创作使用。                    | [官网](https://www.zcool.com.cn/special/zcoolfonts/) |
+| **站酷**字体      | 否❌     | 站酷字库提供的一系列字体，均可供免费商用，由于风格性较强因此适合内容创作者使用。                 | [官网](https://www.zcool.com.cn/special/zcoolfonts/) |
 
 * 「霞鹜文楷」：「落霞与孤鹜齐飞」=>「霞鹜」
 * 你可以前往 Code Space 的[如何食用](/common/start)页面，那里有一个字体切换器，可以让你预览所选字体在网页前端的显示效果。

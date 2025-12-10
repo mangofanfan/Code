@@ -13,7 +13,7 @@ import {
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 // 导入导航
-import {common, c, cpp, java, python, css, scss, javascript, typescript} from "./sidebar"
+import {common, c, cpp, java, python, css, scss, javascript, typescript} from "./sidebar.js"
 
 // https://vitepress.dev/reference/site-config
 // noinspection JSUnusedGlobalSymbols
@@ -23,7 +23,26 @@ export default defineConfig({
     description: "多语言代码空间",
     head: [
       // 添加图标
-      ['link', {rel: 'icon', href: '/favicon.ico'}]
+      ['link', {rel: 'icon', href: '/favicon.ico'}],
+      // 思源宋体
+      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/syst/dist/SourceHanSerifCN/result.css'}],
+      // 思源黑体
+      ['link', {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/cn-fontsource-source-han-sans-sc-vf/font.css'}],
+      // 霞鹜文楷 * 6
+      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-SemiLightItalic/result.css'}],
+      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-SemiLight/result.css'}],
+      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-Regular/result.css'}],
+      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-MediumItalic/result.css'}],
+      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-Medium/result.css'}],
+      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-Italic/result.css'}],
+      // 霞鹜文楷 屏幕阅读 & Mono * 2
+      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lywkpmydb/dist/LXGWWenKaiScreen/result.css'}],
+      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lywkpmydb/dist/LXGWWenKaiMonoScreen/result.css'}],
+      // 得意黑
+      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/dyh/dist/SmileySans-Oblique/result.css'}],
+      // MiSans
+      ['link', {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Normal/MiSans-Medium.min.css'}],
+      ['link', {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Normal/MiSans-Bold.min.css'}],
     ],
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config
@@ -146,7 +165,7 @@ export default defineConfig({
             {
               name: "MangoFanFan_",
               username: "mangofanfan",
-              mapByEmailAliases: "mangofanfanw@icloud.com",
+              mapByEmailAliases: ["mangofanfanw@icloud.com"],
               mapByNameAliases: ["MangoFanFan", "MangoFanFan_", "MangoFanFanw"]
             }
           ]
