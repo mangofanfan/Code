@@ -87,6 +87,16 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
     <template #doc-after>
       <GiscusComment />
     </template>
+    <template #aside-ads-before>
+      <a href="https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BAOcJK1olXDYCUF1cCEwWA19MRANLAjZbERscSkAJHTNYRgYKBlMdBgABFhNIVjtBB1sRXgcCU19dFxJSXzI4XF5zKQ9XLRc4ShN-BR17ZA0QJEEHElJROE4XAmwMGVsTXQ8yV19fDk0SBG8PHGslXQcyFTBdD0wUBWwNEmsXXQcBXVlZDUoeM28OHF8XVAcAV1tZAEwnBG8BKwBAMwJRUwoPWEkfUTsOH1glbTYBZFldAV8RcS5aD11nbTYBZF1tOEkWAmsBK2vL05J4URorT01hZDN9TgZUNW9BitDJGTl8A2sNCmslbTY"
+         target="_blank">
+        <img src="./img/ad-2.png" alt="AD">
+      </a><br>
+      <a href="https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BAMoJK1olXDYDZBoCUBVIMzZNXhpXVhgcAQYNVxRHXXBTTkRHA1ocZAA4VxNTSnVReCd3PlBQJlkPakkWQDkEF2sQXQcBUFxdDkseM2wJGV0TWAECU1ltOEsWMyRmGmsXXQcBXVlZDUoeM28OHF8XVAcDV11ZDEknBG8BKwBAMwJRUwoPWEkfUTsOH1glbTYBZFldAV8RcS5aD11nbTYDZF1tOEkWAmsBK2vL0LZxXCshbUhBWjJKUAtDDQ59itPtGTlnA20AGUolbTYy"
+         target="_blank">
+        <img src="./img/ad-1.png" alt="AD">
+      </a>
+    </template>
   </Layout>
 </template>
 
