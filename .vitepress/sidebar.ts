@@ -166,7 +166,8 @@ export const web_front = [
   {
     text: "HTML",
     items: [
-      {text: "语言特性", link: '/web-front/html/features'}
+      {text: "语言特性", link: '/web-front/html/features'},
+      {text: "基本结构", link: '/web-front/html/basic-structure'},
     ]
   } as pageSidebarItem,
   {
