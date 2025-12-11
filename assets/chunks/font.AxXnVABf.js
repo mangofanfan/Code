@@ -1,0 +1,1 @@
+import{getCookie as n}from"./typescript-cookie.BPHHFWFs.js";let e=document.documentElement;function m(){const o=n("fontFamily");o&&(e.style.setProperty("--vp-font-family-base",o),console.log("已经设置页面字体为：",o));const t=n("monoFontFamily");t&&(e.style.setProperty("--vp-font-family-mono",t),console.log("已经设置代码字体为：",t))}export{m as initFontFamily};
