@@ -22,8 +22,11 @@ import {
   InlineLinkPreviewElementTransform
 } from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
 
+// 代码块类型提示
+import { transformerTwoslash } from "@shikijs/vitepress-twoslash";
+
 // 导入导航
-import {common, c, cpp, java, python, css, scss, javascript, typescript} from "./sidebar.js"
+import {common, c, cpp, java, python, web_front} from "./sidebar.js"
 
 // https://vitepress.dev/reference/site-config
 // noinspection JSUnusedGlobalSymbols
@@ -64,10 +67,7 @@ export default defineConfig({
             {text: 'C++', link: '/cpp/features'},
             {text: 'Java', link: '/java/features'},
             {text: 'Python', link: '/python/features'},
-            {text: 'CSS', link: '/css/features'},
-            {text: 'SCSS', link: '/scss/features'},
-            {text: 'JavaScript', link: '/javascript/features'},
-            {text: 'TypeScript', link: '/typescript/features'},
+            {text: 'Web 开发', link: '/web-front/features'},
           ]
         },
       ],
@@ -78,10 +78,7 @@ export default defineConfig({
         "/cpp/": cpp,
         "/java/": java,
         "/python/": python,
-        "/css/": css,
-        "/scss/": scss,
-        "/javascript/": javascript,
-        "/typescript/": typescript,
+        "/web-front/": web_front,
       },
 
       outline: {
@@ -128,6 +125,9 @@ export default defineConfig({
     },
 
     markdown: {
+      codeTransformers: [
+        transformerTwoslash()
+      ],
       config: (md) => {
         // Use lightbox plugin
         md.use(lightbox, {});

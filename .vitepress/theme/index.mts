@@ -21,8 +21,12 @@ import {
   NolebaseInlineLinkPreviewPlugin,
 } from '@nolebase/vitepress-plugin-inline-link-preview/client'
 
+// 代码块类型提示
+import TwoslashFloatingVue from "@shikijs/vitepress-twoslash/client";
+
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
+import '@shikijs/vitepress-twoslash/style.css'
 
 // 自定义组件
 import WhatsClass from "./components/WhatsClass.vue"
@@ -43,6 +47,7 @@ export default{
         }
         app.use(NolebaseGitChangelogPlugin);
         app.use(NolebaseInlineLinkPreviewPlugin);
+        app.use(TwoslashFloatingVue);
         app.component('WhatsClass', WhatsClass);
         app.component('FontsComboWidget', FontsComboWidget);
     },
