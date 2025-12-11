@@ -10,12 +10,27 @@ hero:
     - theme: brand
       text: 如何食用
       link: /common/start
-    - theme: alt
+    - theme: brand
       text: 编码建议
       link: /common/advice
-    - theme: alt
+    - theme: brand
       text: 参与贡献
       link: /common/contribute
+    - theme: alt
+      text: C
+      link: /c/features
+    - theme: alt
+      text: C++
+      link: /cpp/features
+    - theme: alt
+      text: Java
+      link: /java/features
+    - theme: alt
+      text: Python
+      link: /python/features
+    - theme: alt
+      text: Web 开发
+      link: /web-front/features
 
 features:
   - title: C/C++/Python/Java/...

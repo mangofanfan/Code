@@ -103,7 +103,7 @@ export default defineConfig({
 
       footer: {
         message: 'License: GPL-v3. 文本协议 CC-BY',
-        copyright: '芒果帆帆 - 帆域网络 - 备案 <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2024110906号</a>',
+        copyright: '<a href="https://code.mangofanfan.cn/sitemap.xml">站点地图</a> - 备案 <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2024110906号</a>',
       },
 
       lastUpdated: {
