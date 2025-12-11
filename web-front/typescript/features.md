@@ -4,14 +4,14 @@ Typescript（TS）是Javascript的超集。在完全兼容JS写法的基础上�
 
 Typescript是编译型语言。按照工程惯例，Typescript脚本需要编译为Javascript脚本后提供给浏览器使用。考虑到不是所有用户的浏览器都支持ES6，Typescript编译器可以将TS脚本编译为ES5标准的JS，确保开发者只需要掌握最现代的写法。
 
-学习TS需要你拥有一些JS基础，[你可以在这里查看本站的Javascript教程。](/javascript/features)
+学习TS需要你拥有一些JS基础，[你可以在这里查看本站的Javascript教程。](/web-front/javascript/features)
 
 ## 预览
 Typescript相比于Javascript最明显的提升就是提供了强制性的类型检查，例如你可以定义一个**接口**，然后支持Typescript的IDE将会检查你指定到该接口的对象是否符合接口定义的规范。
 
 :::code-group
 
-```typescript [validate.ts]
+```typescript twoslash [validate.ts]
 // noinspection JSAnnotator
 // 这里是你简单编写的 Typescript 代码
 interface ErrorMessage {

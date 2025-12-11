@@ -155,39 +155,42 @@ export const python = [
   } as pageSidebarItem,
 ]
 
-export const css = [
+export const web_front = [
   {
-    text: "概览",
+    text: "总览",
     items: [
-      {text: "语言特性", link: '/css/features'}
+      {text: "Web 开发", link: '/web-front/features'},
+      {text: "打开一个网站", link: "/web-front/open-a-website"}
     ]
-  } as pageSidebarItem
-]
-
-export const scss = [
+  } as pageSidebarItem,
   {
-    text: "概览",
+    text: "HTML",
     items: [
-      {text: "语言特性", link: '/scss/features'}
+      {text: "语言特性", link: '/web-front/html/features'}
     ]
-  } as pageSidebarItem
-]
-
-export const javascript = [
+  } as pageSidebarItem,
   {
-    text: "概览",
+    text: "CSS",
     items: [
-      {text: "语言特性", link: '/javascript/features'}
+      {text: "语言特性", link: '/web-front/css/features'}
     ]
-  } as pageSidebarItem
-]
-
-
-export const typescript = [
+  } as pageSidebarItem,
   {
-    text: "概览",
+    text: "SCSS",
     items: [
-      {text: "语言特性", link: '/typescript/features'}
+      {text: "语言特性", link: "/web-front/scss/features"}
+    ]
+  } as pageSidebarItem,
+  {
+    text: "JavaScript",
+    items: [
+      {text: "语言特性", link: '/web-front/typescript/features'}
+    ]
+  } as pageSidebarItem,
+  {
+    text: "TypeScript",
+    items: [
+      {text: "语言特性", link: '/web-front/javascript/features'}
     ]
   } as pageSidebarItem
 ]
