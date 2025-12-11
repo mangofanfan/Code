@@ -1,3 +1,8 @@
+//==============================================================================
+// Code Space 是位于 GitHub 上的开源项目，发起者为 MangoFanFan。
+// 项目部署在 code.mangofanfan.cn，遵循 CC BY / GPL 3.0 协议。
+//==============================================================================
+
 import {defineConfig} from 'vitepress'
 
 // Import lightbox plugin
@@ -11,6 +16,11 @@ import {
   GitChangelog,
   GitChangelogMarkdownSection,
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
+
+// 行内链接预览
+import {
+  InlineLinkPreviewElementTransform
+} from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
 
 // 导入导航
 import {common, c, cpp, java, python, css, scss, javascript, typescript} from "./sidebar.js"
@@ -121,7 +131,8 @@ export default defineConfig({
       config: (md) => {
         // Use lightbox plugin
         md.use(lightbox, {});
-        md.use(groupIconMdPlugin) //代码组图标
+        md.use(groupIconMdPlugin); //代码组图标
+        md.use(InlineLinkPreviewElementTransform);
       },
       lineNumbers: true,
     },
@@ -133,6 +144,7 @@ export default defineConfig({
           '@nolebase/vitepress-plugin-enhanced-readabilities/client',
           'vitepress',
           '@nolebase/ui',
+          '@nolebase/vitepress-plugin-inline-link-preview/client',
         ],
       },
       ssr: {
@@ -140,6 +152,7 @@ export default defineConfig({
           // 如果还有别的依赖需要添加的话，并排填写和配置到这里即可
           '@nolebase/vitepress-plugin-enhanced-readabilities',
           '@nolebase/ui',
+          '@nolebase/vitepress-plugin-inline-link-preview',
         ],
       },
 

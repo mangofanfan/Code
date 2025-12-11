@@ -16,7 +16,13 @@ import {
     NolebaseGitChangelogPlugin
 } from '@nolebase/vitepress-plugin-git-changelog/client'
 
+// 行内链接预览
+import {
+  NolebaseInlineLinkPreviewPlugin,
+} from '@nolebase/vitepress-plugin-inline-link-preview/client'
+
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
+import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
 
 // 自定义组件
 import WhatsClass from "./components/WhatsClass.vue"
@@ -36,6 +42,7 @@ export default{
             })
         }
         app.use(NolebaseGitChangelogPlugin);
+        app.use(NolebaseInlineLinkPreviewPlugin);
         app.component('WhatsClass', WhatsClass);
         app.component('FontsComboWidget', FontsComboWidget);
     },

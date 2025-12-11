@@ -8,6 +8,7 @@ import DefaultTheme from "vitepress/theme";
 import { nextTick, onMounted, provide } from "vue";
 import { useData, useRouter } from "vitepress";
 import mediumZoom from "medium-zoom";
+import { pangu } from "pangu/browser";
 
 const { Layout } = DefaultTheme;
 const router = useRouter();
@@ -35,10 +36,15 @@ onMounted(async () => {
   const {initFontFamily} = await import("./font.js");
   setupMediumZoom();
   initFontFamily();
+  pangu.autoSpacingPage();
+  console.log("Code Space 页面已经加载。")
 });
 
 // Subscribe to route changes to re-apply medium zoom effect
-router.onAfterRouteChange = setupMediumZoom;
+router.onAfterRouteChange = (() => {
+  setupMediumZoom();
+  pangu.autoSpacingPage();
+});
 
 // 应用主题切换动画
 const enableTransitions = () =>
@@ -100,7 +106,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
   </Layout>
 </template>
 
-<style>
+<style lang="scss">
 @import "style/var.css";
 
 .medium-zoom-overlay {

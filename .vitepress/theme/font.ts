@@ -11,9 +11,11 @@ export function initFontFamily() {
   const fontFamily = getCookie('fontFamily')
   if (fontFamily) {
     root.style.setProperty('--vp-font-family-base', fontFamily)
+    console.log("已经设置页面字体为：", fontFamily)
   }
   const monoFontFamily = getCookie('monoFontFamily')
   if (monoFontFamily) {
     root.style.setProperty('--vp-font-family-mono', monoFontFamily)
+    console.log("已经设置代码字体为：", monoFontFamily)
   }
 }
