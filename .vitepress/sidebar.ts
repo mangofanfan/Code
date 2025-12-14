@@ -150,7 +150,12 @@ export const python = [
     items: [
       {text: "特性", link: "/python/tkinter/features"},
       {text: "添加控件", link: "/python/tkinter/add_com"},
-      {text: "事件循环", link: "/python/tkinter/eventloop"}
+      {text: "添加布局", link: "/python/tkinter/layout"},
+      {text: "事件循环", link: "/python/tkinter/eventloop"},
+      {text: "控件", items: [
+          {text: "标签 Label", link: "/python/tkinter/com/Label"},
+          {text: "按钮 Button", link: "/python/tkinter/com/Button"},
+        ]}
     ]
   } as pageSidebarItem,
 ]
