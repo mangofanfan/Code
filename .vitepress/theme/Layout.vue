@@ -22,6 +22,7 @@ import {
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css';
 // @ts-ignore
 import GiscusComment from "./components/GiscusComment.vue";
+import CoffeeWidget from "./components/CoffeeWidget.vue";
 
 // Setup medium zoom with the desired options
 const setupMediumZoom = () => {
@@ -91,6 +92,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
       <NolebaseEnhancedReadabilitiesScreenMenu />
     </template>
     <template #doc-after>
+      <CoffeeWidget />
       <GiscusComment />
     </template>
     <template #aside-ads-before>

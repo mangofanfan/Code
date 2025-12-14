@@ -105,6 +105,6 @@ mangofanfan@LAPTOP-MREQPRK3:~/HelloWorld$ /bin/python3 /home/mangofanfan/HelloWo
 
 页面下方的贡献者栏目中有我的GitHub地址，你可以前往查看我创建的一些屎山。另外，如果你愿意帮助我一起维护Code Space，你的名字也会出现在下面的贡献者当中~
 
-你随时可以参与Code Space的编写与维护，请参阅[贡献章节](/common/contribute)，并请放心，芒果帆帆非常乐于与你合作继续这个项目。
+你随时可以参与Code Space的编写与维护，请参阅[贡献章节](/common/contribute.md)，并请放心，芒果帆帆非常乐于与你合作继续这个项目。
 
 那么，希望Code Space能够对你有所帮助。继续吧。

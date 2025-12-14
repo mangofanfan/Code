@@ -3,12 +3,13 @@
 // 项目部署在 code.mangofanfan.cn，遵循 CC BY / GPL 3.0 协议。
 //==============================================================================
 
-import {inBrowser, Theme} from "vitepress";
+import {Theme} from "vitepress";
 import 'virtual:group-icons.css' //代码组样式
 import './style/index.css'
 
 import "jetbrains-mono"  // JetBrains Mono
 
+import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'  // Element Plus
 
 // 页面历史
@@ -31,6 +32,7 @@ import '@shikijs/vitepress-twoslash/style.css'
 // 自定义组件
 import WhatsClass from "./components/WhatsClass.vue"
 import FontsComboWidget from "./components/FontsComboWidget.vue";
+import CoffeeWidget from "./components/CoffeeWidget.vue";
 
 import Layout from "./Layout.vue";
 import {App} from "@vue/runtime-core";
@@ -39,16 +41,12 @@ import {App} from "@vue/runtime-core";
 export default{
     Layout,
     enhanceApp({ app }: {app: App}) {// 仅在浏览器环境下加载 Element Plus
-        if (inBrowser) {
-            // 动态导入 Element Plus，防止构建时报错
-            import('element-plus').then((module) => {
-                app.use(module.default)
-            })
-        }
+        app.use(ElementPlus)
         app.use(NolebaseGitChangelogPlugin);
         app.use(NolebaseInlineLinkPreviewPlugin);
         app.use(TwoslashFloatingVue);
         app.component('WhatsClass', WhatsClass);
         app.component('FontsComboWidget', FontsComboWidget);
+        app.component('CoffeeWidget', CoffeeWidget);
     },
 } satisfies Theme;
