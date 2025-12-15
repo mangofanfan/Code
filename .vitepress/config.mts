@@ -38,21 +38,16 @@ export default defineConfig({
       // 添加图标
       ['link', {rel: 'icon', href: '/favicon.ico'}],
       // 思源宋体
-      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/syst/dist/SourceHanSerifCN/result.css'}],
-      // 思源黑体
-      ['link', {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/cn-fontsource-source-han-sans-sc-vf/font.css'}],
+      ['link', {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/cn-fontsource-source-han-serif-sc-vf@1.0.9/font.min.css'}],
       // 霞鹜文楷 * 6
-      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-SemiLightItalic/result.css'}],
-      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-SemiLight/result.css'}],
-      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-Regular/result.css'}],
-      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-MediumItalic/result.css'}],
-      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-Medium/result.css'}],
-      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-Italic/result.css'}],
-      // 霞鹜文楷 屏幕阅读 & Mono * 2
-      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lywkpmydb/dist/LXGWWenKaiScreen/result.css'}],
-      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/lywkpmydb/dist/LXGWWenKaiMonoScreen/result.css'}],
+      ['link', {rel: 'stylesheet', href: 'https://moe-cdn.mangofanfan.cn/fonts/fonts/LXGWWenKai-Light/LXGWWenKai-Light/result.css'}],
+      ['link', {rel: 'stylesheet', href: 'https://moe-cdn.mangofanfan.cn/fonts/fonts/LXGWWenKai-Medium/LXGWWenKai-Medium/result.css'}],
+      ['link', {rel: 'stylesheet', href: 'https://moe-cdn.mangofanfan.cn/fonts/fonts/LXGWWenKai-Regular/LXGWWenKai-Regular/result.css'}],
+      ['link', {rel: 'stylesheet', href: 'https://moe-cdn.mangofanfan.cn/fonts/fonts/LXGWWenKaiMono-Light/LXGWWenKaiMono-Light/result.css'}],
+      ['link', {rel: 'stylesheet', href: 'https://moe-cdn.mangofanfan.cn/fonts/fonts/LXGWWenKaiMono-Medium/LXGWWenKaiMono-Medium/result.css'}],
+      ['link', {rel: 'stylesheet', href: 'https://moe-cdn.mangofanfan.cn/fonts/fonts/LXGWWenKaiMono-Regular/LXGWWenKaiMono-Regular/result.css'}],
       // 得意黑
-      ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/dyh/dist/SmileySans-Oblique/result.css'}],
+      // ['link', {rel: 'stylesheet', href: 'https://chinese-fonts-cdn.deno.dev/packages/dyh/dist/SmileySans-Oblique/result.css'}],
       // MiSans
       ['link', {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Normal/MiSans-Medium.min.css'}],
       ['link', {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Normal/MiSans-Bold.min.css'}],

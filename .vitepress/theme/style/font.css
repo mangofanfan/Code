@@ -1,4 +1,7 @@
-/* font.css */
+/*============================================================================*/
+/* Code Space 是位于 GitHub 上的开源项目，发起者为 MangoFanFan。 */
+/* 项目部署在 code.mangofanfan.cn，遵循 CC BY / GPL 3.0 协议。 */
+/*============================================================================*/
 
 /**
   file.mangofanfan.cn 是芒果的网站。
@@ -13,4 +16,38 @@
   src: url('https://file.mangofanfan.cn/s/jhfjip') format('truetype');
   font-weight: 400;
   font-style: normal;
+}
+
+/**
+  霞鹜文楷
+ */
+@font-face {
+  font-family: 'LXGW WenKai';
+  src: local('LXGW WenKai Light');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'LXGW WenKai';
+  src: local('LXGW WenKai');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'LXGW WenKai';
+  src: local('LXGW WenKai Medium');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'LXGW WenKai Mono';
+  src: local('LXGW WenKai Mono Light');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'LXGW WenKai Mono';
+  src: local('LXGW WenKai Mono');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'LXGW WenKai Mono';
+  src: local('LXGW WenKai Mono Medium');
+  font-weight: 500;
 }

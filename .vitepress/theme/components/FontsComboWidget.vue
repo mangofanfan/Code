@@ -18,7 +18,7 @@ async function switchFontFamily(fontFamily: string) {
   if (root) {
     root.style.setProperty('--vp-font-family-base', fontFamily)
     const { setCookie } = await import("typescript-cookie");
-    setCookie('fontFamily', fontFamily)
+    setCookie('fontFamily', fontFamily, { expires: 365 })
   }
 }
 
@@ -26,7 +26,7 @@ async function switchMonoFontFamily(fontFamily: string) {
   if (root) {
     root.style.setProperty('--vp-font-family-mono', fontFamily)
     const { setCookie } = await import("typescript-cookie");
-    setCookie('monoFontFamily', fontFamily)
+    setCookie('monoFontFamily', fontFamily, { expires: 365 })
   }
 }
 
@@ -37,35 +37,27 @@ async function switchMonoFontFamily(fontFamily: string) {
   <VPBadge text="选择文本字体，不影响代码字体" type="tip" />
   <VPBadge text="以 cookie 存储在浏览器中" type="info" />
   <br>
-  <el-button type="primary" plain
-             style="font-family: 'Source Han Serif CN VF',serif"
-             @click="() => switchFontFamily('Source Han Serif CN VF')"
+  <el-button type="primary"
+             style="font-family: 'Source Han Serif SC VF',serif"
+             @click="() => switchFontFamily('Source Han Serif SC VF')"
   >思源宋体</el-button>
-  <el-button type="primary"
-             style="font-family: 'Source Han Sans SC VF',serif"
-             @click="() => switchFontFamily('Source Han Sans SC VF')"
-  >思源黑体</el-button>
   <el-button type="primary" plain
-             style="font-family: LXGW Bright,serif"
-             @click="() => switchFontFamily('LXGW Bright')"
-  >霞鹜文楷（LXGW Bright）</el-button>
-  <el-button type="primary"
              style="font-family: LXGW WenKai Screen,serif"
-             @click="() => switchFontFamily('LXGW WenKai Screen')"
-  >霞鹜文楷（屏幕阅读）</el-button>
-  <el-button type="primary" plain
-             style="font-family: LXGW WenKai Mono Screen,serif"
-             @click="() => switchFontFamily('LXGW WenKai Mono Screen')"
-  >霞鹜文楷（屏幕阅读+Mono）</el-button>
+             @click="() => switchFontFamily('LXGW WenKai')"
+  >霞鹜文楷</el-button>
   <el-button type="primary"
+             style="font-family: LXGW WenKai Mono Screen,serif"
+             @click="() => switchFontFamily('LXGW WenKai Mono')"
+  >霞鹜文楷（Mono）</el-button>
+  <el-button type="primary" plain
              style="font-family: 'OPPO Sans',serif"
              @click="() => switchFontFamily('OPPO Sans')"
   >OPPO Sans</el-button>
-  <el-button type="primary" plain
+  <el-button type="primary"
              style="font-family: 'MiSans',serif"
              @click="() => switchFontFamily('MiSans')"
   >MiSans</el-button>
-  <el-button type="primary"
+  <el-button type="primary" plain
              style="font-family: 'Inter',serif"
              @click="() => switchFontFamily('Inter')"
   >VitePress Inter</el-button>
@@ -88,8 +80,8 @@ async function switchMonoFontFamily(fontFamily: string) {
   </el-button>
   <el-button type="primary" plain
              style="font-family: 'LXGW WenKai Mono Screen',serif"
-             @click="() => switchMonoFontFamily('LXGW WenKai Mono Screen')"
-  >霞鹜文楷（屏幕阅读+Mono）
+             @click="() => switchMonoFontFamily('LXGW WenKai Mono')"
+  >霞鹜文楷（Mono）
   </el-button>
   <el-button type="primary"
              style="font-family: 'Consolas',serif"
