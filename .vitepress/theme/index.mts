@@ -33,6 +33,7 @@ import '@shikijs/vitepress-twoslash/style.css'
 import WhatsClass from "./components/WhatsClass.vue"
 import FontsComboWidget from "./components/FontsComboWidget.vue";
 import CoffeeWidget from "./components/CoffeeWidget.vue";
+import Constructing from "./components/Constructing.vue";
 
 import Layout from "./Layout.vue";
 import {App} from "@vue/runtime-core";
@@ -48,5 +49,6 @@ export default{
         app.component('WhatsClass', WhatsClass);
         app.component('FontsComboWidget', FontsComboWidget);
         app.component('CoffeeWidget', CoffeeWidget);
+        app.component("Constructing", Constructing)
     },
 } satisfies Theme;

@@ -18,4 +18,4 @@ Python是一门解释型语言，Python代码将在运行时由Python解释器�
 print("Hello World!")
 ```
 
-这一行代码中，`print`是内置（`builtin`）函数，`builtin`中的函数无需导入即可直接使用。Python中的函数需要以`函数名(没有或一个或多个参数)`的形式调用，类型标注不是强制的，IDE会推测类型并提供智能补全。
+这一行代码中，`print`是内置（`builtin`）函数，`builtin`中的函数无需导入即可直接使用，相当于已经被 Python 自动导入。

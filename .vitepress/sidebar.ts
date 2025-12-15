@@ -122,7 +122,6 @@ export const python = [
     text: "概览",
     items: [
       {text: "语言特性", link: '/python/features'},
-      {text: "碎碎念", link: '/python/something'},
       {text: "安装与执行", link: '/python/install-run'},
     ]
   } as pageSidebarItem,
