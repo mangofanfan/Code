@@ -19,7 +19,7 @@
       <li>缺少准确详细的描述</li>
       <li>介绍的内容或所提供代码不符合最佳实践</li>
     </ul>
-    <a href="/common/contribute.md">您可以帮助完善本页面的内容~</a>
+    <a href="/common/contribute">您可以帮助完善本页面的内容~</a>
   </div>
 </template>
 
