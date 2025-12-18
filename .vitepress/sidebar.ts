@@ -154,7 +154,8 @@ export const python = [
       {text: "控件", items: [
           {text: "标签 Label", link: "/python/tkinter/com/Label"},
           {text: "按钮 Button", link: "/python/tkinter/com/Button"},
-        ]}
+        ]},
+      {text: "变量绑定", link: "/python/tkinter/variable"}
     ]
   } as pageSidebarItem,
 ]
