@@ -48,6 +48,23 @@ for string in stringList:
 
 在实际运行中，如果阴差阳错，`stringList`中混入了一个整形，Python会在`pring(string.split(","))`报错，而非`string: str`，这说明类型提示终归是提示，也证明了Python是一门弱类型语言。
 
+:::info 如果你想要在类型不符合时主动报错
+```python
+stringList = ["aaaaa", "bbbbb", "ccccc", "Ciallo～(∠·ω< )⌒★", 111]
+
+for string in stringList:
+    if not isinstance(string, str):
+        raise TypeError("All elements must be strings")
+    print(string)
+```
+
+`isinstance` 函数接收两个参数，并判断两个参数的类型是否相等。`str` 是 Python 的字符串类型。
+
+在这样的两行代码之后，IDE 应当可以自动推断出你的 `string` 变量只能是 `str` 类型。
+
+关于主动引发异常，[请参见条件与异常章节~](./if-try.md)
+:::
+
 另外，你也可以将变量指定为你定义的类型，例如：
 
 ```python
@@ -57,7 +74,7 @@ class Cat:
         self.age = age
     def miaow(self):
         print(f"{self.name}: Miaow Miaow!!")
-        
+
 # 假设这里有很多很多代码
 
 for cat in catList:
@@ -220,7 +237,7 @@ Player(hp=100, age=20)
 ```python
 xxx.py:23: error: Argument 1 to "Player" has incompatible type "int"; expected "PlayerHP"  [arg-type]
 xxx.py:23: error: Argument 2 to "Player" has incompatible type "int"; expected "PlayerAge"  [arg-type]
-Found 2 errors in 1 file (checked 1 source file) 
+Found 2 errors in 1 file (checked 1 source file)
 ```
 
 可见，`mypy`根据代码第15行的类型提示，检查了`p1`和`p2`在实例化时的传入值，并且发现第23行`p2 = Player(100, 20)`的传入值类型与提示不符。

@@ -1,6 +1,6 @@
 # 函数
 
-函数是封装好以供调用的一段Python代码。Python使用关键字`def`定义一个函数，例如定义一个加法函数并调用的代码如下：
+函数是封装好以供调用的一段 Python 代码。Python 使用关键字 `def` 定义一个函数，例如定义一个加法函数并调用的代码如下：
 
 ```python
 def cal_add(a, b):
@@ -140,6 +140,61 @@ print(cal_add.__doc__)
 docstring的本质是特殊的注释，因此不会影响程序的运行。
 
 :::
+
+## 调用栈
+我们经常会需要在函数之间互相跳转，从一个函数跳到另一个函数。Python 的调用栈提供了我们当前正在执行的代码的位置，包括其所处的文件与所处的函数，以及该代码的所有的上级调用者。
+
+### 未捕获异常时自动打印
+```python
+def func1():
+    print("Function 1")
+    print(1 / 0)
+    return
+
+def func2():
+    print("Function 2")
+    func1()
+    return
+
+def func3():
+    print("Function 3")
+    func2()
+    return
+
+if __name__ == "__main__":
+    func3()
+```
+
+函数的调用顺序为，从 `func3` 到 `func2` 到 `func1`。由于异常发生在 `func1` 当中，所以以上调用顺序也会在异常出现时被完整地打印下来。
+
+关于异常是怎么个事，[去看前面的教程哦。](./if-try.md)
+
+```text
+Function 3
+Function 2
+Function 1
+Traceback (most recent call last):
+  File "/home/mango/pythonTest/./code_2.py", line 17, in <module>
+    func3()
+    ~~~~~^^
+  File "/home/mango/pythonTest/./code_2.py", line 13, in func3
+    func2()
+    ~~~~~^^
+  File "/home/mango/pythonTest/./code_2.py", line 8, in func2
+    func1()
+    ~~~~~^^
+  File "/home/mango/pythonTest/./code_2.py", line 3, in func1
+    print(1 / 0)
+          ~~^~~
+ZeroDivisionError: division by zero
+```
+
+Python 也会标注具体的异常出现的位置。如果是 SyntaxError 的话，Python 会给出一个大致的异常位置。
+
+### 使用 traceback 模块
+你也可以使用 Python 标准库 traceback 来获取调用栈，一般这只有在处理异常时有用。
+
+请参见 traceback 的文档：<https://docs.python.org/zh-cn/3.13/library/traceback.html>
 
 ## 可变参数
 

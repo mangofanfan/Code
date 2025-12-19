@@ -177,7 +177,7 @@ try:
         print("输入的数字太大啦！")
 
     print(f"你刚刚输入了{num}，是嘛！")
-    
+
 except ValueError:
     print("传入的东西不是数字！")
 ```
@@ -244,3 +244,59 @@ mangofanfan@LAPTOP-MREQPRK3:~/HelloWorld$ /bin/python3 /home/mangofanfan/HelloWo
 ```
 
 在每个异常处理逻辑中，`except`和`finally`至少要有一个，`else`必须配合`except`一起使用。
+
+### 主动引发异常
+你可以通过代码手段人为地引发异常。
+
+```python {5}
+stringList = ["aaaaa", "bbbbb", "ccccc", "Ciallo～(∠·ω< )⌒★", 111]
+
+for string in stringList:
+    if not isinstance(string, str):
+        raise TypeError("All elements must be strings")
+    print(string)
+```
+
+`stringList` 包含四个字符串和一个整形，在后面我们针对其中的每一个元素，都判断其类型是否为字符串，那么，在判断到`111`的时候，if 分支被进入，抛出 TypeError。
+
+```text
+aaaaa
+bbbbb
+ccccc
+Ciallo～(∠·ω< )⌒★
+Traceback (most recent call last):
+  File "/home/mango/pythonTest/code_3.py", line 5, in <module>
+    raise TypeError("All elements must be strings")
+TypeError: All elements must be strings
+```
+
+抛出异常之后，当前正在执行的代码会被中断。如果异常没有被上级调用者捕获，那么 Python 将退出，并把异常像这样抛给用户。
+
+如果被捕获了，那么就会正常按照 try-except 的逻辑执行啦。
+
+```python
+stringList = ["aaaaa", "bbbbb", "ccccc", "Ciallo～(∠·ω< )⌒★", 111]
+
+def print_strings(stringList):
+    for string in stringList:
+        if not isinstance(string, str):
+            raise TypeError("All elements must be strings")
+        print(string)
+
+
+if __name__ == "__main__":
+    try:
+        print_strings(stringList)
+    except TypeError as e:
+        print(f"Error: {e}")
+```
+
+并且由于异常被捕获，程序的返回值为 0。
+
+```text
+aaaaa
+bbbbb
+ccccc
+Ciallo～(∠·ω< )⌒★
+Error: All elements must be strings
+```
