@@ -145,6 +145,12 @@ export const python = [
     ]
   } as pageSidebarItem,
   {
+    text: "Python 标准库",
+    items: [
+      {text: "json", link: '/python/json'}
+    ]
+  },
+  {
     text: "Tkinter",
     items: [
       {text: "特性", link: "/python/tkinter/features"},
