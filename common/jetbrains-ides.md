@@ -17,6 +17,8 @@ JetBrains 的所有 IDE 均可以使用其 JetBrains Toolbox 获取和管理。T
 ### Fleet
 Fleet 是 JetBrains 推出的对标 VSCode 的 IDE 兼代码编辑器。Fleet 是 JetBrains 的一次大胆尝试，尽管目前看来尝试并不成功。
 
+确实不成功。该产品已经于 2025 年末宣布停止支持，[博客原文在此](https://blog.jetbrains.com/zh-hans/fleet/2025/12/the-future-of-fleet/)。
+
 ### Gateway
 Gateway 是 JetBrains 的远程开发解决方案，用于连接到远程开发环境进行开发，同时启用本地 IDE 可以使用的各种工具和功能。
 
@@ -25,6 +27,8 @@ Gateway 是 JetBrains 的远程开发解决方案，用于连接到远程开发�
 例如说，在 Windows 下，你需要通过 Gateway 连接到本地的 [WSL](/common/wsl)。Gateway 会在 WSL 中下载 JetBrains IDE 后端，然后启动后端，再在 Windows 中启动轻量级的 IDE 前端以供开发。VSCode 也是基于同样的原理连接到 WSL 的。
 
 同样可以连接到其他的开发环境，例如 JetBrains CodeCanvas，以及通过 ssh 连接到普通的远程主机。
+
+值得注意的是，下载 IDE 后端的速度与目标机器的网络环境相关，可能会有点慢。
 
 ## 许可证
 JetBrains IDEs 的价格曾经是天文数字。~~骗你的，现在也是。~~单个 IDE 的商业许可证的年付价格从 800 ~ 1600 不等，可在其[官网的定价部分](https://www.jetbrains.com.cn/store/?section=personal&billing=yearly)查看。包含所有 IDE 的 All Products Pack 更是达到 2500 年付的天价。AI 功能包含在内，但是额度仍然有限，如果你对 AI 的需求量很大的话可能需要额外购买 AI 额度。
