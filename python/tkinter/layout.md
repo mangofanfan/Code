@@ -70,6 +70,10 @@ if __name__ == '__main__':
 * `rowspan` - 跨行 ~~（类似合并单元格）~~
 * `columnspan` - 跨列
 
+下面是另一个使用 grid 布局实现的窗口，你可以简单思考一下这个窗口是如何实现的。然后，你可以快速地在 [输入 Entry](./com/Entry.md) 中验证你的猜想。
+
+![Entry Login Window](./com/img/Entry-login-window.png)
+
 ## place
 place 使用绝对定位，需要以像素为单位手动指定控件的尺寸和摆放位置。
 

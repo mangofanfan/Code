@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
 ![Tkinter Hello](./img/tkinter-hello.png)
 
-窗口打开时，IDE 的控制台将保持挂起状态；窗口关闭后，控制台中将显示程序的退出信息。
+窗口打开时，IDE 的控制台将保持挂起状态；窗口关闭后，控制台中将显示程序的退出信息。这是因为 Tkinter 维护了一个[事件循环](eventloop.md)，你会在稍后理解它。
 
 ## Tcl / Tk
 Tkinter 是对 Tcl/Tk 的高级封装，这是一开源的图形用户界面开发工具，具有跨平台、轻量化的特色，并且被包括 Python 在内的多种语言使用作为 GUI 库。

@@ -8,7 +8,7 @@ TK / Tcl 的底层机制提供了数据与视图绑定的操作方法，类似�
 ## 实例
 用例子直接理解叭。
 
-```python {19-28}
+```python {19-28,30-34}
 import PIL.Image, PIL.ImageTk
 
 from tkinter import *
@@ -38,6 +38,12 @@ def main():
 
     Label(frame, textvariable=count).pack()
 
+    text = StringVar(value="初始文本")
+
+    Entry(frame, textvariable=text).pack()
+    Label(frame, textvariable=text).pack()
+    Button(frame, text="打印", command=lambda: print(text.get())).pack()
+
     root.mainloop()
 
 if __name__ == '__main__':
@@ -46,8 +52,18 @@ if __name__ == '__main__':
 
 上面的代码的运行效果如下：
 
+![variable](./img/variable.png)
+
+只看上半部分的话：
+
 ![variable 1](./img/variable_1.png)
 
 点击按钮会让下面的 Label 中的数字 +1。
 
 ![variable 2](./img/variable_2.png)
+
+再看下半部分：
+
+![variable 3](./img/variable_3.png)
+
+修改 Entry 中的内容，下面的 Label 中的内容会同步更改。点击按钮也可以在控制台中打印该内容。
